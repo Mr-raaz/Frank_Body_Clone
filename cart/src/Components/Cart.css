@@ -1,0 +1,16 @@
+.box > button{
+      width: 250px;
+      margin: auto;
+      height: 50px;
+      border: none;
+      background: brown;
+      color: white;
+}
+.box{
+    text-align: center;
+}
+.div > p{
+    margin-left: 20px;
+    font-size: xx-large;
+    font-family: Courier New;
+}
