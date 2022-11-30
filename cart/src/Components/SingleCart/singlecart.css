@@ -1,0 +1,11 @@
+.cart{
+    width: 30%;
+}
+.cart > img {
+    width: 100%;
+}
+.cart > p{
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 600;
+}
