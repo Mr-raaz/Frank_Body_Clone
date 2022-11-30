@@ -17,6 +17,9 @@ export const Cart = ()=>{
                         <th>SUBTOTAL</th>
                     </tr>
                 </thead>
+                <tbody>
+                    
+                </tbody>
             </table>
         </div>
     </div>
