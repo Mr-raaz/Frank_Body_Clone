@@ -6,6 +6,9 @@
       background: brown;
       color: white;
 }
+.box > h1{
+    font-family: 'Courier New', Courier, monospace;
+}
 .box{
     text-align: center;
 }
@@ -13,4 +16,7 @@
     margin-left: 20px;
     font-size: xx-large;
     font-family: Courier New;
+}
+.div{
+    border-bottom: 1px solid rgb(51, 43, 43);
 }
