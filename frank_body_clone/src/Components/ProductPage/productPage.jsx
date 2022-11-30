@@ -4,6 +4,9 @@ import InitialOfferSection from './product_page_comp/InitialOfferSection/Initial
 import Product_List from './product_page_comp/InitialOfferSection/Product_List';
 import {motion as m } from 'framer-motion';
 import ShoppingOfferSection  from './product_page_comp/InitialOfferSection/ShoppingOfferSection';
+import {Footer} from '../Footer/footer';
+import Maximise from '../LandingPage/MiddleSection/Maximise';
+import OfferBanner from './product_page_comp/OfferBanner';
 function ProductPage() {
     return (
         <>
@@ -22,11 +25,10 @@ function ProductPage() {
 
             <Product_List />
 
-
+            <OfferBanner />
                 <ShoppingOfferSection />
-            <div className='footerDemo'>
-
-            </div>
+                <Footer />
+            
     </m.div>
                         
 

@@ -291,3 +291,64 @@ margin-left: 25px;
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+.afterProductGrid{
+    margin-top: 40px;
+}
+.afterProductGrid > img {
+    width: 100%;
+}
+
+.trendingSection{
+    border: 1px solid red;
+    margin-top: 40px;
+    background-color: #e76364;
+    padding: 20px;
+}
+.trendingSection > h2{
+    color: white;
+    letter-spacing: 4px;
+    /* text-align: center; */
+    font-size: 30px;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.trendingSection > h2 > span{
+    font-size: 10px;
+}
+.trendingSlider{
+    padding: 10px;
+}
+
+.trendingSlider  img {
+    width: 100%;
+}
+
+.testingClas{
+    box-shadow: rgba(0, 0, 0, 0.09) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 10px 8px, rgba(0, 0, 0, 0.09) 0px 15px 15px;
+}
+
+.trendingSlider   .swiper-button-next {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    right:10px;
+    padding: 30px;
+    color: #e76364 !important;
+    fill: black !important;
+    stroke: black !important;
+    border-radius: 50%;
+  }
+
+  .trendingSlider   .swiper-button-prev {
+    background-color: white;
+    background-color: rgba(255, 255, 255, 0.9);
+    right:10px;
+    padding: 30px;
+    color: #e76364 !important;
+    fill: black !important;
+    stroke: black !important;
+    border-radius: 50%;
+  }

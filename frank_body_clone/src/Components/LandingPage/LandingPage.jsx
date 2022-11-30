@@ -27,6 +27,7 @@ function LandingPage() {
             >
             
             <TopSection />
+            
              <Maximise />
 
              <LimitedTimeDeal />

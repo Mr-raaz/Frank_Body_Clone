@@ -23,8 +23,8 @@ function Navbar() {
                             <ul>
                                 <li><NavLink to='/'>Home</NavLink></li>
                                 <li><NavLink to='/shop'>Shop</NavLink></li>
-                                <li>About</li>
-                                <li>Contact</li>
+                                <li><NavLink to='/about'>About</NavLink></li>
+                                <li><NavLink to='/contact'>Contact</NavLink></li>
                             </ul>
                     </div>
                     <div className='navbar_icons'>

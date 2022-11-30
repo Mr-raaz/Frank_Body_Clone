@@ -1,9 +1,12 @@
 import React from 'react';
-
+import {motion as m } from 'framer-motion'
 function Maximise() {
     return (
         <>
-           <div className="maximise_beauty_section">
+           <m.div className="maximise_beauty_section"  
+
+            
+           >
            <h3>Maximize Your Beauty</h3>
 
 
@@ -46,7 +49,7 @@ function Maximise() {
                      </div>
 
 
-           </div>
+           </m.div>
         </>
     );
 }
