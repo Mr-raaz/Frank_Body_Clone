@@ -1,5 +1,5 @@
 import React from "react";
-import "./singlecart.css"
+import "./SingleCart.css"
 
 export const SingleCart = ({image,category})=>{
     return <div className="cart">
