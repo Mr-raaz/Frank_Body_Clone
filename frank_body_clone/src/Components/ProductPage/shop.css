@@ -42,6 +42,11 @@
     align-items: center;
 }
 
+.category_shop_section > div >div:hover{
+    cursor: pointer;
+}
+
+
 .category_shop_section > div:first-of-type{
     width: 80%;
     display: flex;
@@ -84,7 +89,6 @@
 }
 
 .productList_outer > div{
-    /* border: 1px solid #e76364; */
     border: 1px solid grey;
     border-radius: 5px;
     overflow: hidden;
@@ -97,7 +101,6 @@
 }
 
 .card_details{
-    /* border: 1px solid black; */
     margin-top: 5px;
     padding: 5px;
     display: flex;
@@ -106,18 +109,14 @@
     flex-direction: column;
 }
 .card_details > div:first-of-type{
-    /* width: 75%; */
-    /* border: 1px solid red; */
     width: 100%;
 }
 
 .card_details > div:last-of-type{
-    /* border: 1px solid red; */
-    /* width: 25% */
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid red; */
     width: 100%;
+    padding: 0px 10px;
 }
 
 .card_details p {
@@ -132,7 +131,6 @@
 }
 
 .card_buttons{
-    /* border: 1px solid black; */
     margin-bottom: 10px;
     margin-top: 10px;
     display: flex;
@@ -160,13 +158,15 @@
     border-radius: 5px;
     cursor: pointer;
 }
-
+.nac:hover{
+    background-color: #d49090;
+    color: white;
+}
 .bn:hover{
     background-color: #d49090;
 }
 
 .slider_Section_shop{
-    /* border: 1px solid red; */
     height: 320px;
 }
 
@@ -239,19 +239,14 @@
 
 
 .Delivery_Offer_section{
-    /* border: 1px solid blue; */
     margin-top: 60px;
     display: flex;
-    /* justify-content: space-between; */
     padding: 20px 10px;
-    /* background-color: ; */
     background-color: antiquewhite;
 }
 
 .Delivery_Offer_section > div {
-    /* border: 1px solid red; */
     display: flex;
-    /* justify-content: space-between; */
     width: 400px;
     padding: 10px;
     border-right: 1px solid grey;
@@ -260,8 +255,6 @@
 }
 
 .Delivery_Offer_section > div >div:first-of-type{
-    /* border: 1px solid red; */
-    /* width: 20%; */
     width: 60px;
     height: 60px;
     display: flex;
@@ -291,4 +284,10 @@ margin-left: 25px;
 
 .Delivery_Offer_section > div:last-of-type{
     border-right: none;
+}
+
+.prodNameElii{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
 }

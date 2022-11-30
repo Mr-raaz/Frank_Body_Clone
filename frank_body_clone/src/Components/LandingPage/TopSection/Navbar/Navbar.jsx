@@ -4,12 +4,20 @@ import logo from '../img/log.png'
 import { NavLink } from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass , faUser , faCartShopping} from '@fortawesome/free-solid-svg-icons';
+import { useNavigate } from 'react-router-dom';
 function Navbar() {
+
+    const navigate = useNavigate();
+
+    function logoClick(){
+        navigate('/');
+    }
     return (
         <>
                 <div className="navbar_outer">
                     <div className='logodiv'>
-                        <img src={logo} alt="Not found" />
+                        <img src={logo} alt="Not found" onClick={logoClick}  className="logo"
+                        />
                     </div>
                     <div className='navList'>
                             <ul>

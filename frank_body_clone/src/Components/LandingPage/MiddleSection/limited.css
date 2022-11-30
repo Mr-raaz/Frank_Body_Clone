@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.limitedTimeDealOuter{
+    padding: 20px 40px;
+    background: #e76364; /* Old browsers */
+    background: -moz-linear-gradient(top,  #e76364 35%, #e76364 46%, #e76364 46%, #e76364 46%, #e76364 46%, #ffffff 46%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #e76364 35%,#e76364 46%,#e76364 46%,#e76364 46%,#e76364 46%,#ffffff 46%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #e76364 35%,#e76364 46%,#e76364 46%,#e76364 46%,#e76364 46%,#ffffff 46%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e76364', endColorstr='#ffffff',GradientType=0 );
+
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  border-radius: 10px;
+    overflow: hidden;
+    padding: 0px 0px 0px 0px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    margin-bottom: 25px;
+
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+
+  .limitedDealDiv{
+    width: 100%;
+    height: 300px;
+  }
+
+  .limitedTimeDealOuter > h2{
+    color: white;
+    letter-spacing: 2px;
+  }
+
+  .limitedTimeDealOuter p{
+    color: white;
+    padding: 5px 10px;
+    padding-bottom: 2%;
+  }
+
+ 
+
+  span{
+    letter-spacing: 2px;
+font-family: sans-serif;
+
+  }
+
+  .ltdCard_div{
+    width: 100%;
+    overflow: hidden;
+    padding-bottom: 10px;
+    
+  }
+
+  .prodTitle h6{
+    font-family: sans-serif;
+    padding: 8% 10px 0px 10px;
+    font-size: 15px;
+    font-weight: 600;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    text-transform: capitalize;
+    text-align: left;
+  }
+
+  .price{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    padding-left: 5%;
+    align-items: center;
+  }
+
+  .price>span:first-of-type{
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .price>span:last-of-type{
+    padding-left: 5px;
+    font-size: 13px;
+    text-decoration: line-through;
+  }
+
+  .atcbtn2{
+    background-color: #e76364;
+    color: white;
+    font-weight: bold;
+    width: 80%;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin: 15px 0px;
+  }
+
+
+  
+.testinglimte{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+.testinglimte button{
+    background: none;
+    border: none;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+}

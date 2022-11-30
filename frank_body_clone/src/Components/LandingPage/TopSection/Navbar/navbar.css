@@ -19,6 +19,14 @@
     width: 10%;
     height: 40px;
 }
+
+.logo{
+    transition: 0.5s;
+}
+.logo:hover{
+cursor: pointer;
+scale: 1.02;
+}
 .logodiv > img{
 width: 100%;
 height: 100%;
@@ -76,6 +84,7 @@ height: 100%;
     font-weight: bold;
     color: #e76364;
 }
+
 .heading_bottom_div{
     background-color: rgb(232, 227, 227);
     height: 17.6vh;
@@ -122,4 +131,8 @@ height: 100%;
 .navList  a:hover{
     color: white;
     font-weight: 600;
+}
+
+.ShowNow_btn:hover{
+    cursor: pointer;
 }

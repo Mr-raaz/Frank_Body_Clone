@@ -1,5 +1,7 @@
 import TopSection from "./TopSection/TopSection";
 import {motion as m} from 'framer-motion';
+import Maximise from "./MiddleSection/Maximise";
+import LimitedTimeDeal from "./MiddleSection/LimitedTimeDeal";
 function LandingPage() {
 
 
@@ -12,7 +14,9 @@ function LandingPage() {
             >
             
             <TopSection />
-            
+             <Maximise />
+
+             <LimitedTimeDeal />
             </m.div>
             
         </>

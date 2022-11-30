@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import '../../shop.css'
 import heading from '../../../LandingPage/TopSection/img/checking.png';
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -10,6 +10,9 @@ import img2 from '../../sliderImg/slider2.avif';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
 function InitialOfferSection() {
+
+    const [activecat , setActiveCat] = useState("All Products");
+    
     return (
         <>
             <div className="shop_outer">
@@ -29,13 +32,15 @@ function InitialOfferSection() {
                 </div>
 
                 <div className="category_shop_section">
-                        <div><div className='activeated_category'>All Products</div>
-                    <div>Everyday</div>
-                    <div>Body Care</div>
-                    <div>Skin Care</div>
-                    <div>Lip Care</div>
-                    <div>&nbsp;&nbsp;&nbsp;Hair &nbsp;&nbsp;&nbsp;</div>
-                    <div>Perfumes</div>
+                        <div>
+                        
+                    <div className={activecat == "All Products" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("All Products")}>All Products</div>
+                    <div className={activecat == "Everyday" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Everyday")}>Everyday</div>
+                    <div className={activecat == "Body Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Body Care")}>Body Care</div>
+                    <div className={activecat == "Skin Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Skin Care")}>Skin Care</div>
+                    <div className={activecat == "Lip Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Lip Care")}>Lip Care</div>
+                    <div className={activecat == "Hair" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Hair")}>&nbsp;&nbsp;&nbsp;Hair &nbsp;&nbsp;&nbsp;</div>
+                    <div className={activecat == "Perfumes" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Perfumes")}>Perfumes</div>
                     
                     </div>
                         <div className='filter_div'>

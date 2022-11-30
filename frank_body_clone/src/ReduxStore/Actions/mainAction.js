@@ -11,7 +11,6 @@ export default function AddProducts(dispatch , updatefilte){
             payload:data
     
         })
-        console.log("data has been sent through action.....")
     }
    
     getData()

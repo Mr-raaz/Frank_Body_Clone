@@ -14,3 +14,55 @@ body{
     height: 300px;
     background-color: #e76364;
 }
+
+
+body::-webkit-scrollbar {
+	width: 5px;
+}
+body::-webkit-scrollbar-track {
+	color: transparent;
+}
+body::-webkit-scrollbar-thumb {
+	border-radius: 5px;
+	background-color: darkgrey;
+	background-color:#e76364;
+}
+
+.maximise_beauty_section{
+    padding: 40px;
+    text-align: center;
+}
+
+.maximise_beauty_section > h3{
+    letter-spacing: 2px;
+    font-size: 25px;
+}
+
+.outer{
+    padding: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.outer > div  > div{
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.outer > div img{
+    width: 100%;
+}
+.inner h5{
+    margin-top: 10%;
+}
+
+.testing{
+    transition: 0.5s;
+    cursor: pointer;
+}
+.testing:hover{
+    scale: 1.15;
+}

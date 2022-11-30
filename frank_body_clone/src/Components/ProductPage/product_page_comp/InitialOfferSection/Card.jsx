@@ -17,7 +17,7 @@ function Card({url_1 , prod_name , best_price }) {
                                 <div className='card_details'>
 
                                     <div>
-                                        <p>{prod_name}</p>
+                                        <p className='prodNameElii'>{prod_name}</p>
                                     </div>
 
 
