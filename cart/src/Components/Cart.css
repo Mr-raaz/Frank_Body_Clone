@@ -13,10 +13,12 @@
     text-align: center;
 }
 .div > p{
-    margin-left: 20px;
     font-size: xx-large;
     font-family: Courier New;
+    margin-bottom: 5px;
 }
 .div{
     border-bottom: 1px solid rgb(51, 43, 43);
+    width: 95%;
+    margin: auto;
 }
