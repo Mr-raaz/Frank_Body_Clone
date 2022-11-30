@@ -52,9 +52,6 @@ function LimitedTimeDeal() {
       </Swiper>
             </div>
 
-<br /> <br /><br /><br /><br />
-
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum laboriosam mollitia fugiat dignissimos, corrupti asperiores ducimus est dolorem adipisci eveniet impedit minima esse perspiciatis eligendi a debitis pariatur inventore earum neque. Repudiandae qui modi, eum reiciendis et rerum fugit cupiditate! Qui consequatur quidem, labore nihil, ea velit fugiat rem ducimus tempora culpa distinctio exercitationem officia ut error explicabo similique, sunt amet? Ducimus adipisci commodi est minus beatae obcaecati? Assumenda provident totam quisquam amet consequuntur quae consequatur harum? Perspiciatis placeat ad, excepturi tempora sequi enim fugiat nobis molestias consequatur ab, suscipit corrupti! Deleniti vitae et obcaecati quasi id debitis veritatis similique.
         </>
     );
 }

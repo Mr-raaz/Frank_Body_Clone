@@ -1,0 +1,200 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#footer{
+    background-color: #e76364;
+    color: white;
+    width: 100%;
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500&display=swap');
+    padding-bottom:2%;
+    font-family: poppins;
+}
+
+#footer-top{
+    font-family: Poppins;
+    width: 90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#footer-top-left{
+    margin: 5% 0 5% 0;
+}
+#footer-top-left > button{
+    background-color: #3F2A2D;
+    color: white;
+    border: none;
+    padding: 1.5%;
+    margin-top: 2%;
+}
+#footer-top-left > h3{
+    font-weight: 600;
+}
+#footer-top-left > button:hover{
+    background-color: #5f3239;
+    
+}
+#footer-top-right{
+    margin: 5% 0 5% 0;
+}
+#footer-top-right > button{
+    background-color: #3F2A2D;
+    color: white;
+    border: none;
+    padding: 1.5%;
+    margin-top: 2%;
+}
+#footer-top-right > h3{
+    font-weight: 100;
+    font-weight: 600;
+}
+#footer-top-right > button:hover{
+    background-color: #5f3239;
+    
+}
+.social-media-container{
+    display: flex;
+    width: 50%;
+    margin-top: 2%;
+}
+
+.seprator_line{
+    margin-top: 5px;
+    height: 1px;
+    background-color:#3F2A2D;
+    border: none;
+    /* width: 50%; */
+}
+.round_social{
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    padding: 9px;
+    margin: auto;
+}
+.round_social :hover{
+    background-color: rgb(255, 238, 238);
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.footer_Bottom_Container{
+    display: grid;
+    grid-template-columns: 45fr 15fr 15fr 15fr;
+    gap: 2%;
+    width: 90%;
+    margin: auto;
+    font-family: poppins;
+}
+.footer_heading{
+    padding: 5px;
+    color: white;
+    margin-top: 20px;
+}
+.bottom-display-points-link{
+    text-decoration: none;
+    color:white;
+}
+.bottom-display-points{
+    background-color: transparent;
+    width: 50%;
+    padding: 5px;
+}
+.bottom-display-points:hover{
+    background-color:#f2f2f2;
+    width: 60%;
+    color: #3F2A2D;
+}
+.bottom-display-points-right{
+    background-color: transparent;
+    width: 100%;
+    padding: 5px;
+}
+.bottom-display-points-right:hover{
+    background-color:#f2f2f2;
+    color: #3F2A2D;
+}
+
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    #footer{
+        padding-bottom:10%;
+    }
+    #footer-top{
+        font-family: Poppins;
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1 , 100%);
+        text-align: center;
+    }
+    .social-media-container{
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    .footer_Bottom_Container{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        gap: 2%;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .bottom-display-points{
+        background-color: transparent;
+        width: 100%;
+        padding: 5px;
+    }
+    .bottom-display-points:hover{
+        background-color:#f2f2f2;
+        width: 100%;
+        color: #3F2A2D;
+    }
+
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    #footer-top{
+        font-family: Poppins;
+        width: 90%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1 , 100%);
+        text-align: center;
+    }
+    .social-media-container{
+        display: flex;
+        width: 50%;
+        margin: auto;
+    }
+    .footer_Bottom_Container{
+        display: grid;
+        grid-template-columns: repeat(1,100%);
+        gap: 2%;
+        width: 90%;
+        margin: auto;
+        text-align: center;
+    }
+    .bottom-display-points-link{
+        text-align: center;
+    }
+    #foooter-bottom-1{
+        text-align: center;
+    }
+    .bottom-display-points{
+        background-color: transparent;
+        width: 100%;
+        padding: 5px;
+    }
+    .bottom-display-points:hover{
+        background-color:#f2f2f2;
+        width: 100%;
+        color: #3F2A2D;
+    }
+}

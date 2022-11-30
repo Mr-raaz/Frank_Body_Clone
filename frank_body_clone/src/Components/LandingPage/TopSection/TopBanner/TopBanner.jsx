@@ -3,9 +3,17 @@ import rightlogo from '../img/rightlogo.png';
 import {motion as m } from 'framer-motion';
 
 
+
+
+
+
+
+
 function TopBanner() {
 
-       
+       function handleClick(){
+        alert("working fine.....")
+       }
 
     return (
 
@@ -18,12 +26,13 @@ function TopBanner() {
             
             
             >
+            
                     <h1 >More Than Makeups,</h1>
                     <h1>We Create Beauty in Joy</h1>
                     <h1>& Give The Best Magic Beauty</h1>
                     <p>Everything is There For Your Beauty Needs</p>
 
-                    <button className='ShowNow_btn' >Shop Now</button>
+                    <button className='ShowNow_btn' onClick={handleClick}>Shop Now</button>
 
 
 

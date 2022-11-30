@@ -66,3 +66,224 @@ body::-webkit-scrollbar-thumb {
 .testing:hover{
     scale: 1.15;
 }
+
+
+#bottom_features{
+    width: 100%;
+    padding: 2%;
+    text-align: center;
+}
+.bottom_features_container{
+    width: 80%;
+    margin: auto;
+}
+.bf_img{
+    width: 20%;
+}
+.fullsizeB{
+    width: 100%;
+}
+.bannerI1Link{
+    text-decoration: none;
+    color: #3F2A2D;
+}
+.ImageOverText{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Solway&display=swap');
+    text-align: center;
+    margin-top: -30%;
+    margin-bottom: 5%;
+}
+.ImageOverText > h2{
+    font-family: solway;
+    font-size: 300%;
+}
+.ImageOverText > button{
+    background-color: #3F2A2D;
+    color: white;
+    border: none;
+    padding: 1%;
+    margin-top: 2%;
+}
+.ImageOverText > button:hover{
+    background-color: #5f3239;
+    
+}
+#buttFromInstagram{
+    margin: 3% 0 5% 0;
+    text-align: center;
+}
+#buttFromInstagram >h2{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Solway&display=swap');
+    font-family: poppins;
+    color: #3F2A2D;
+    font-weight: 300;
+    font-size: 200%;
+    margin-bottom: 3%;
+}
+.buttFromInstagramImagContainer{
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 15fr 15fr 15fr 15fr;
+    gap: 1%;
+}
+.bFICRound{
+    width: 90%;
+    border-radius: 50%;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.bFICRound:hover{
+    transform: scale(1.1);
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+#dreamBanner{
+    background-color: #e76364;
+    padding: 4% 2%;
+    text-align: center;
+    font-family: poppins;
+    color: white;
+    margin-top: 60px;
+}
+#dreamBanner > h2{
+    font-size: 300%;
+}
+.dreamBannerBtn{
+    border: none;
+    background-color: #f2f2f2;
+    color: #370f15;
+    width: 30%;
+    margin: auto;
+    margin-top: 2%;
+    padding: 1% 0.5%;
+    font-size: large;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.dreamBannerBtn:hover{
+    background-color: #370f15;
+    color: #f2f2f2 ;
+    
+}
+#getYourKitOf{
+    text-align: center
+}
+#getYourKitOf >h2{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Solway&display=swap');
+    font-family: poppins;
+    color: #3F2A2D;
+    font-weight: 300;
+    font-size: 200%;
+    margin-bottom: 3%;
+}
+#whatsHot{
+    text-align: center
+}
+#whatsHot >h2{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&family=Solway&display=swap');
+    font-family: poppins;
+    color: #3F2A2D;
+    font-weight: 300;
+    font-size: 200%;
+    margin-bottom: 3%;
+}
+#signUpadvt{
+    background-color: #370f15;
+    color: white;
+    padding: 1%;
+    text-align: center;
+    font-family: poppins;
+}
+@media only screen and (min-width: 421px) and (max-width: 720px) {
+    .bottom_features_container{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(2,45%);
+        margin: auto;
+    }
+    .bf_img{
+        width: 100%;
+    }   
+    .ImageOverText{
+        margin-top: -28%;
+        margin-bottom: 8%;
+    }
+    .ImageOverText > h2{
+        font-family: solway;
+        font-size: 180%;
+    }
+    .buttFromInstagramImagContainer{
+        width: 100%;
+        grid-template-columns: repeat(2,45%);
+        gap: 5%;
+        margin: auto;
+    }
+    .bFICRound{
+        width: 90%;
+        border-radius: 50%;
+    }
+    .alignBFI{
+        margin: auto;
+        
+    }
+    #buttFromInstagram{
+        margin-bottom: 10%;
+    }
+    .dreamBannerBtn{
+        width: 70%;
+        margin: auto;
+        margin-top: 1%;
+        padding: 1%;
+        font-size: large;
+    }
+}
+
+
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+    .bottom_features_container{
+        width: 100%;
+        margin: auto;
+        display: grid;
+        grid-template-columns: repeat(1,90%);
+        margin: auto;
+    }
+    .bf_img{
+        width: 60%;
+        margin: auto;
+    }   
+    .ImageOverText{
+        margin-top: -35%;
+        margin-bottom: 5%;
+    }
+    .ImageOverText > h2{
+        font-family: solway;
+        font-size: 130%;
+    }
+    #buttFromInstagram{
+        margin-bottom: 15%;
+    }
+    .buttFromInstagramImagContainer{
+        width: 100%;
+        grid-template-columns: repeat(1,90%);
+        margin: auto;
+    }
+    .bFICRound{
+        width: 90%;
+        border-radius: 50%;
+    }
+    .alignBFI{
+        margin: auto;
+    }
+    .dreamBannerBtn{
+        width: 90%;
+        margin: auto;
+        margin-top: 1%;
+        padding: 2%;
+        font-size: large;
+    }
+    #dreamBanner{
+        padding-bottom: 8%;
+    }
+}
