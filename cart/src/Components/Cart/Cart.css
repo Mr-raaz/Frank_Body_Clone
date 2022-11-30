@@ -42,5 +42,11 @@
     padding-top: 40px;
 }
 .bottom-box{
-    width: 100%;
+    width: 93%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px;
+    margin: auto;
+    margin-top: 60px;
+    margin-bottom: 100px;
 }

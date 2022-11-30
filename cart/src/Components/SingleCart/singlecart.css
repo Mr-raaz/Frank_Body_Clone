@@ -1,11 +1,13 @@
 .cart{
-    width: 30%;
+    width: 100%;
 }
 .cart > img {
     width: 100%;
 }
 .cart > p{
     font-size: 20px;
-    font-family: 'Courier New', Courier, monospace;
-    font-weight: 600;
+    font-family: Courier;
+    font-weight: 550;
+    letter-spacing: 5px;
+    color: #333;
 }
