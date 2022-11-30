@@ -1,18 +1,17 @@
 var initialData = {
-    products:[
-        {
-            name:"demo Product",
-            price:299,
-            category:"skin care",
-            rating:"2.5"
-        }
-    ]
+    products:[]
 }
 
 
 export default function ProductReducer(data = initialData , action){
 
     switch(action.type){
+
+        case "ADDDATA":
+            return {
+                ...data,
+                products:[...data.products , ...action.payload]
+            }
 
     
         default :{
