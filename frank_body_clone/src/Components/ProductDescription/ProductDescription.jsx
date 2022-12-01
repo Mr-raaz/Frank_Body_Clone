@@ -39,9 +39,6 @@ function ProductDescription() {
                 })
             }
 
-
-
-            
 <ShoppingOfferSection />
                 <Footer />
         </>

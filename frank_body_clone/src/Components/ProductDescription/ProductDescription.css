@@ -2,8 +2,9 @@
     /* border: 1px solid red; */
     display: flex;
     justify-content: space-between;
-    height: 70vh;
-    padding: 2% 5%;
+    height: 75vh;
+    padding: 1% 5%;
+    padding-top: 3%;
     /* background-color: antiquewhite; */
 }
 
@@ -16,7 +17,6 @@
 }
 .product_detail_outer > div:last-of-type{
     width: 50%;
-    /* border: 1px solid blueviolet; */
 }
 .firstContaier{
    display: flex;
@@ -36,7 +36,7 @@
 
 .image_container{
     /* border: 1px solid gold; */
-    padding: 3%
+    padding: 2%
 }
 
 .image_container img{
@@ -52,8 +52,8 @@
 }
 .other_images_container > div{
     /* border: 1px solid red; */
-    height: 60px;
-    width: 70%;
+    height: 50px;
+    width: 60%;
     border: 1px solid grey;
     padding: 1%;
 }
@@ -73,6 +73,7 @@
 }
 .product_info h3 {
     letter-spacing: 2px;
+    font-size: 25px;
     color: #333333;
 }
 .rating{
@@ -130,8 +131,9 @@
     font-size: 25px;
 }
 .tax{
-    font-size: 12px;
-    margin-top: 10px;
+    font-size: 14px;
+    margin-top: 15px;
+    color: black;
 }
 .discount{
     border-left: 1px solid green;
@@ -150,7 +152,7 @@
     margin-top: 10px;
 }
 .otherDetails p {
-    font-size: 10px;
+    font-size: 12px;
     margin-top: 5px;
      font-weight: 400;
      color: black;
@@ -158,7 +160,7 @@
 
 .atcbtn3{
     /* border: 1px solid red; */
-    margin-top: 40px;
+    margin-top: 50px;
     display: flex;
     align-items: center;
 }
@@ -174,7 +176,7 @@
 }
 
 .atcbtn3 button:last-of-type{
-    margin-left: 20px;
+    margin-left: 40px;
     padding: 10px 60px;
     background-color: #e76364;
     color: white;
@@ -185,3 +187,4 @@
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     cursor: pointer;
 }
+

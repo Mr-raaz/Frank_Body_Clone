@@ -1,8 +1,28 @@
-import React from "react";
+import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
 function Details_page({ prod_name, url_1, url_2  , categories , mrp , best_price}) {
+
+
+
+
+  const [currImg , setCurr] = useState(url_1);
+
+
+
+  function changeImage(val){
+    if(val == 1) setCurr(url_2);
+    if(val == 2) setCurr("https://images-static.nykaa.com/media/catalog/product/6/a/6af872e8904207503758_2.jpg")
+    if(val == 3) setCurr("https://images-static.nykaa.com/media/catalog/product/6/a/6af872e8904207503758_5.jpg")
+    if(val == 4) setCurr("https://images-static.nykaa.com/media/catalog/product/e/0/e0ca2ce3607347879367_6.jpg")
+    if(val == 0) setCurr(url_1);
+  }
+
+
   return (
+
+    
+    
     <>
       <div className="location_product_des">
         <p className="location">
@@ -18,23 +38,27 @@ function Details_page({ prod_name, url_1, url_2  , categories , mrp , best_price
       <div className="product_detail_outer">
         <div className="firstContaier">
           <div className="other_images_container">
-            <div>
+            <div onClick={()=> changeImage(1)}>
               <img src={url_2} alt="" />
             </div>
 
-            <div>
+            <div onClick={()=> changeImage(0)}>
+              <img src={url_1} alt="" />
+            </div>
+
+            <div onClick={()=> changeImage(2)} >
               <img
                 src="https://images-static.nykaa.com/media/catalog/product/6/a/6af872e8904207503758_2.jpg"
                 alt="not found"
               />
             </div>
-            <div>
+            <div onClick={()=> changeImage(3)}>
               <img
                 src="https://images-static.nykaa.com/media/catalog/product/6/a/6af872e8904207503758_5.jpg"
                 alt="not found"
               />
             </div>
-            <div>
+            <div onClick={()=> changeImage(4)}>
               <img
                 src="https://images-static.nykaa.com/media/catalog/product/e/0/e0ca2ce3607347879367_6.jpg"
                 alt="not found"
@@ -43,7 +67,7 @@ function Details_page({ prod_name, url_1, url_2  , categories , mrp , best_price
           </div>
 
           <div className="image_container">
-            <img src={url_1} alt="Not Found" />
+            <img src={currImg} alt="Not Found" />
           </div>
         </div>
 
