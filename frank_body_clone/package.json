@@ -3,6 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@chakra-ui/react": "^2.4.2",
+    "@emotion/react": "^11.10.5",
+    "@emotion/styled": "^11.10.5",
     "@fortawesome/fontawesome-svg-core": "^6.2.1",
     "@fortawesome/free-regular-svg-icons": "^6.2.1",
     "@fortawesome/free-solid-svg-icons": "^6.2.1",
@@ -16,6 +19,7 @@
     "react-redux": "^8.0.5",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
+    "react-simple-chatbot": "^0.6.1",
     "redux": "^4.2.0",
     "swiper": "^8.4.5",
     "web-vitals": "^2.1.4"
