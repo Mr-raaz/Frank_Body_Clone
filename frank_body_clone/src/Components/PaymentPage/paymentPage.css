@@ -1,0 +1,163 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#pppage{
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400&display=swap');
+    font-family: poppins;
+    background-color: #EB7E7E;
+    height: 100vh;
+}
+
+#pptop-1{
+    background-color: white;
+    color: #EB7E7E;
+    text-align: center;
+    padding: 1%;
+}
+.paymentpageContainer{
+    background-color: white;
+    width: 80%;
+    height: 80%;
+    margin-top: 1%;
+    position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+}
+
+.ppInnerContainer{
+    width: 97%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%;
+    margin-top: -2.5%;
+}
+.pppagelogo{
+    width: 15%;
+    margin-top: -1%;
+}
+/* .ppinnerContainer-left{
+    border: 1px solid red;
+} */
+.paymentpageContainer >h2{
+    color: #5f3239;
+    margin-left: 1.5%;
+    margin-top: -2%;
+    margin-bottom: 1.5%;
+}
+.ppinnerContainer-left h2, h3{
+    color: #5f3239;
+    margin-top: 10px;
+}
+/* .ppinnerContainer-right{
+    border: 1px solid black;
+} */
+.seprator_line{
+    margin-top: 5px;
+    height: 1px;
+    background-color:#3F2A2D;
+    border: none;
+    /* width: 50%; */
+}
+.inputContainer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+label{
+    color: #5f3239;
+    margin-top: 10%;
+}
+input{
+    background-color: #EB7E7E;
+    color: #5f3239;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 10px;
+    width: 100%;
+}
+input:focus{
+    color: #3F2A2D;
+    border:2px solid #5f3239;
+}
+::placeholder{
+    color: white;
+}
+#wallpaymentsblock{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2%;
+}
+#cardpaymentsblock{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2%; 
+}
+.paymentmodebtn{
+    border: none;
+    color: white;
+    background-color: #5f3239;
+    width: 100%;
+    gap: 2%;
+    border-radius: 5px;
+    padding: 5px;
+
+}
+.paymentmodebtn:focus{
+    background-color: #EB7E7E;
+
+}
+/* .ppInnerContainer h3,h5{
+    margin-top : 5%;
+} */
+/* .ppinnerContainer-right h3{
+    margin-top: -0.1%;
+} */
+
+#upiinputbox{
+    background-color: white;
+    border: 2px solid #3F2A2D;
+}
+#upiinputbox::placeholder{
+    color: #3F2A2D;
+}
+#upiverifybtn{
+    width: 60%;
+    background-color: burlywood;
+    color: #5f3239;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto 0 20% ;
+}
+#upiverifybtn:hover{
+    background-color: rgb(143, 90, 20);
+    color: white;
+}
+#ccvnexpblock{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 5%;
+}
+#cardpaybtn{
+    width: 60%;
+    background-color: burlywood;
+    color: #5f3239;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px auto 0 20% ;
+}
+#cardpaybtn:hover{
+    background-color: rgb(143, 90, 20);
+    color: white;
+}
