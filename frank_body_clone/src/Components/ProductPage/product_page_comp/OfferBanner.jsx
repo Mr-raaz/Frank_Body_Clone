@@ -45,9 +45,9 @@ function OfferBanner() {
           >
 
             {
-                imgarr.map((elem)=>{
+                imgarr.map((elem , idx)=>{
                     return <>
-                    <SwiperSlide className="testingClas">
+                    <SwiperSlide className="testingClas" key={idx+12}>
                 <img src={elem} alt="not found" />
             </SwiperSlide>
                     </>

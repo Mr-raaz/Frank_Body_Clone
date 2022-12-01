@@ -9,11 +9,18 @@ import Card from './Card';
 import {motion as m , AnimatePresence} from 'framer-motion';
 function Product_List() {
 
+    const currActiveCat = useSelector((data) => data.activeCat);
+    const sortingOrd = useSelector((data) => data.sortingOrder);
+    console.log(currActiveCat);
+
+    
+
+
     const [currpage , setPage] = useState(1);
 
     const [filtered , setFiltered] = useState([]);
 
-    // const [displaying , setDisplaying] = useState([]);
+    const [catfilter , setcatfilter] = useState([]);
 
     const dispatch = useDispatch();
 
@@ -21,10 +28,64 @@ function Product_List() {
 
         setFiltered(val);
 
+        setcatfilter(val)
+
     }
 
-    
+    useEffect(()=>{
 
+        testingfunc();
+
+        },[currActiveCat , sortingOrd])
+
+    function testingfunc(){
+
+        const temp = filtered.filter((elem)=>{
+
+            if(currActiveCat == "All Products"){
+                return true;
+            }
+            return elem.categories == currActiveCat;
+        })
+ 
+        if(sortingOrd == "lth") {
+
+            temp.sort(function (a, b) {
+                if (a.best_price > b.best_price) {
+                  return 1;
+                }
+      
+                if (a.best_price < b.best_price) {
+                  return -1;
+                }
+      
+                return 0;
+              });
+
+
+        }
+
+        if(sortingOrd == "htl") {
+
+            temp.sort(function (a, b) {
+                if (a.best_price > b.best_price) {
+                  return -1;
+                }
+      
+                if (a.best_price < b.best_price) {
+                  return 1;
+                }
+      
+                return 0;
+              });
+
+
+        }
+
+        setcatfilter(temp);
+
+    }
+    
     function updatePage(val){
         if(currpage + val >= 1 && currpage+val <= filtered.length / 10){
             setPage(currpage + val);
@@ -54,20 +115,39 @@ function Product_List() {
                 </div>
             <m.div className="productList_outer" 
             
-            // layout
+            layout
 
             // transition={{duration:0.35 , ease: "easeOut"}}
             
             >
-                       <AnimatePresence> {
-                            filtered.map((elem , idx)=>{
-                                return <>
+
+
+                {/* {console.log(catfilter)}; */}
+                <AnimatePresence>
+            {
+                
+
+                catfilter.length > 0 &&  catfilter.map((elem , idx)=>{
+                                return <> 
                                 
-                                {idx >=(currpage*10) && idx<((currpage+1)*10) ? <Card {...elem}/> : null}
+                    
+
+                   {
+                    currActiveCat != "All Products" ? <Card key={idx+22} {...elem}/> : <> {idx >=(currpage*10) && idx<((currpage+1)*10) ? <Card key={idx+22} {...elem}/> : null} </>
+                   }
+                
+
+
                                 
                                 </>
                             })
-                        }</AnimatePresence>
+            }</AnimatePresence>
+            
+                       {/*  {
+
+                       
+
+                        }</AnimatePresence> */}
                         
                         
             </m.div>

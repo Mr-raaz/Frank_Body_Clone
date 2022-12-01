@@ -1,6 +1,15 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import {motion as m } from 'framer-motion';
-function Card({url_1 , prod_name , best_price }) {
+function Card({url_1 , prod_name , best_price  , id , func}) {
+
+        // function updateVal(){
+        //     func(+1);
+        // }
+
+        // useEffect(()=>{
+        //     updateVal();
+        // })
+    
     return (
         <>
             <m.div className='card'
@@ -11,7 +20,7 @@ function Card({url_1 , prod_name , best_price }) {
     layout: { duration: 0.3 }
   }}
             exit={{opacity:0}}
-            >
+         >
                                 <img src={url_1} alt="Not Found" />
 
                                 <div className='card_details'>

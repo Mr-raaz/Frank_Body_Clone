@@ -18,3 +18,25 @@ export default function AddProducts(dispatch , updatefilte){
     
 
 }
+
+
+function setActiveCategory(curr , dispatch){
+
+    dispatch({
+        type:"SETCAT",
+        payload : curr
+    })
+}
+
+function setSortingOrder(curr , dispatch){
+
+    dispatch({
+        type:"SORTINGORDER",
+        payload:curr
+    })
+}
+
+
+
+
+export {setActiveCategory , setSortingOrder};

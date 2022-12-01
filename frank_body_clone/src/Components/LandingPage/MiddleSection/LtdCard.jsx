@@ -3,7 +3,7 @@ import React from 'react';
 function LtdCard({id , url_1 , prod_name , best_price , mrp}) {
     return (
         <div className='ltdCard_div'>
-            <img src={url_1} alt="Not found" />
+            <img src={url_1} alt="Not found" className='checkkingsize' />
             <div className='prodTitle'>
             <h6>{prod_name}...</h6>
             </div>

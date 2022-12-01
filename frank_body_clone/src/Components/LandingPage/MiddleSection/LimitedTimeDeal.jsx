@@ -45,8 +45,8 @@ function LimitedTimeDeal() {
         className="mySwiper"
       >
         {
-            data.map((elem)=>{
-                return <SwiperSlide><LtdCard  {...elem}/></SwiperSlide>
+            data.map((elem , idx)=>{
+                return <SwiperSlide key={idx+93}><LtdCard  key={idx+9} {...elem}/></SwiperSlide>
             })
         }
       </Swiper>

@@ -9,9 +9,29 @@ import img1 from '../../sliderImg/slider1.avif';
 import img2 from '../../sliderImg/slider2.avif';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faAngleRight} from '@fortawesome/free-solid-svg-icons';
+import {setActiveCategory , setSortingOrder} from '../../../../ReduxStore/Actions/mainAction';
+import { useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
 function InitialOfferSection() {
 
     const [activecat , setActiveCat] = useState("All Products");
+
+    const dispatch = useDispatch();
+
+    const data = useSelector((store) => store.products);
+
+    
+    function setActiveCat2(val){
+
+        setActiveCat(val);
+
+        setActiveCategory(val , dispatch);
+
+    }
+
+    function handlesortChange(e){
+            setSortingOrder(e.target.value , dispatch)
+    }
     
     return (
         <>
@@ -34,21 +54,24 @@ function InitialOfferSection() {
                 <div className="category_shop_section">
                         <div>
                         
-                    <div className={activecat == "All Products" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("All Products")}>All Products</div>
-                    <div className={activecat == "Everyday" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Everyday")}>Everyday</div>
-                    <div className={activecat == "Body Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Body Care")}>Body Care</div>
-                    <div className={activecat == "Skin Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Skin Care")}>Skin Care</div>
-                    <div className={activecat == "Lip Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Lip Care")}>Lip Care</div>
-                    <div className={activecat == "Hair" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Hair")}>&nbsp;&nbsp;&nbsp;Hair &nbsp;&nbsp;&nbsp;</div>
-                    <div className={activecat == "Perfumes" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat("Perfumes")}>Perfumes</div>
+                    <div className={activecat == "All Products" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("All Products")}>All Products</div>
+                    <div className={activecat == "Everyday" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("EVERYDAY")}>Everyday</div>
+                    <div className={activecat == "Body Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("Body Care")}>Body Care</div>
+                    <div className={activecat == "Skin Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("Skin Care")}>Skin Care</div>
+                    <div className={activecat == "Lip Care" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("Lip Care")}>Lip Care</div>
+                    <div className={activecat == "HAIR" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("HAIR")}>&nbsp;&nbsp;&nbsp;Hair &nbsp;&nbsp;&nbsp;</div>
+                    <div className={activecat == "Perfumes" ? "activeated_category" : "nac"}  onClick={()=>setActiveCat2("Perfumes")}>Perfumes</div>
                     
                     </div>
                         <div className='filter_div'>
-                                <select>
-                                    <option>-- Sort By Price --</option>
-                                    <option>Price Low to High</option>
-                                    <option>Price High to Low</option>
+
+                                <select onChange={handlesortChange}>
+                                    <option value="sbp">-- Sort By Price --</option>
+                                    <option value="lth">Price Low to High</option>
+                                    <option value="htl">Price High to Low</option>
                                 </select>
+
+
                         </div>
                 </div>
             </div>

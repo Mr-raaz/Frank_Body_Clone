@@ -1,5 +1,7 @@
 var initialData = {
-    products:[]
+    products:[],
+    activeCat:"All Products",
+    sortingOrder:"sbp"
 }
 
 
@@ -11,6 +13,18 @@ export default function ProductReducer(data = initialData , action){
             return {
                 ...data,
                 products:[...data.products , ...action.payload]
+            }
+
+        case "SETCAT":
+            return {
+                ...data,
+                activeCat:action.payload
+            }
+
+        case "SORTINGORDER":
+            return{
+                ...data,
+                sortingOrder:action.payload
             }
 
     
