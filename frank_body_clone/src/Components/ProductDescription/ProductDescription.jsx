@@ -6,6 +6,8 @@ import { useSelector } from 'react-redux';
 import Details_page from './ProdDesComponent/Details_page';
 import { Footer } from '../Footer/footer';
 import ShoppingOfferSection from '../ProductPage/product_page_comp/InitialOfferSection/ShoppingOfferSection';
+import DetailsTabSection from './ProdDesComponent/DetailsTabSection';
+import SimilarProducts from './ProdDesComponent/SimilarProducts';
 function ProductDescription() {
 
     const [currProd , setProd] = useState([]);
@@ -39,6 +41,9 @@ function ProductDescription() {
                 })
             }
 
+            
+<DetailsTabSection />
+<SimilarProducts />
 <ShoppingOfferSection />
                 <Footer />
         </>

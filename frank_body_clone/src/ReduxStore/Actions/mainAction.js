@@ -37,6 +37,13 @@ function setSortingOrder(curr , dispatch){
 }
 
 
+function addToCart(data , dispatch){
+
+    dispatch({
+        type:"ADD",
+        payload:data
+    })
+}
 
 
-export {setActiveCategory , setSortingOrder};
+export {setActiveCategory , setSortingOrder , addToCart};

@@ -12,7 +12,7 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faClock , faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import Timer from './Timer';
 import LtdCard from './LtdCard';
-function LimitedTimeDeal() {
+function LimitedTimeDeal({name}) {
 
 
     const [data , updateData] = useState([])

@@ -20,7 +20,7 @@ function LtdCard({id , url_1 , prod_name , best_price , mrp}) {
             </div>
 
             <div>
-                <button className='atcbtn2'>Add To Cart</button>
+                <button className='atcbtn2' >Add To Cart</button>
             </div>
         </div>
     );

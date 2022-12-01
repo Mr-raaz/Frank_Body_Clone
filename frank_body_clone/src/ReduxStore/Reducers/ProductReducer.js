@@ -1,7 +1,8 @@
 var initialData = {
     products:[],
     activeCat:"All Products",
-    sortingOrder:"sbp"
+    sortingOrder:"sbp",
+    cart:[]
 }
 
 
@@ -25,6 +26,12 @@ export default function ProductReducer(data = initialData , action){
             return{
                 ...data,
                 sortingOrder:action.payload
+            }
+
+        case "ADD":
+            return {
+                ...data,
+                cart:[...data.cart , action.payload]
             }
 
     
