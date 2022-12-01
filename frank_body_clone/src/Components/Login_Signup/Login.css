@@ -1,0 +1,38 @@
+.loginconatiner{
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    color: #4E3B3D;
+    
+}
+.loginform{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.loginform input{
+    padding: 9px 5px;
+}
+.loginform input:last-child{
+    background-color: #3F2A2D;
+    color: white;
+    border: none;
+    padding: 15px 0px 12px 0px;
+    cursor: pointer;
+}
+.loginlinks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 6%;
+}
+.loginlinksdata{
+    text-decoration: none;
+    color: #584649;
+}
+.loginform input:last-child:hover{
+    background-color: #FF8771;
+    color: white;
+    border: none;
+    padding: 15px 0px 12px 0px;
+    cursor: pointer;
+}
