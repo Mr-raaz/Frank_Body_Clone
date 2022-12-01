@@ -1,5 +1,5 @@
 .head{
-    border-bottom: 1px solid #666;
+    border-bottom: 1px solid #999;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -27,4 +27,59 @@
     letter-spacing: 1px;
     font-weight: 600;
     font-family: 'Courier New';
+}
+
+.item-heading {
+    width: 97%;
+    display: flex;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #999;
+}
+
+.cartEle {
+    width: 97%;
+    height: 150px;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-bottom: 1px solid #999;
+}
+
+button {
+    width: 40px;
+    height: 40px;
+    margin-top: 7px;
+}
+
+.item-heading>p {
+    font-size: 18px;
+  line-height: 1;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 4px;
+  font-family: Courier,Helvetica, sans-serif;
+  text-transform: none;
+}
+
+.cartEle > p{
+    font-size: 16px;
+  line-height: 1;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 1px;
+  font-family: Courier,Helvetica, sans-serif;
+  text-transform: none;
+}
+
+.cartEle > div > div > p{
+  font-size: 17px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 1px;
+  font-family: Courier;
+  text-transform: none;
 }
