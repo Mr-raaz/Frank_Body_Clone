@@ -15,6 +15,10 @@ import bfi4 from './Images/buttfrominsta/bfi4.webp';
 import bannerI1 from './Images/bannerI1.webp'
 import { Footer } from "../Footer/footer";
 
+
+
+
+
 function LandingPage() {
 
 
@@ -82,10 +86,9 @@ function LandingPage() {
         <Footer />
         </div>
 
-
-             {/* tesing ends here */}
-
             </m.div>
+            
+
             
         </>
     );
