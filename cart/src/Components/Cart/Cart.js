@@ -1,7 +1,9 @@
 import React from "react";
+import {useSelector} from "react-redux";
 import "./Cart.css"
 
 export const Cart = ()=>{
+    const cartData = useSelector((storeData)=>storeData.cart);
     return <div>
         <div className="head">
         <p>Your Shopping Basket</p>
