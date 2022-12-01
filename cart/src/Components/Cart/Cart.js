@@ -1,17 +1,27 @@
-import React, { useState } from "react";
-import {useSelector} from "react-redux";
+import React, { useRef, useState } from "react";
+import {useDispatch, useSelector} from "react-redux";
+import { DeleteFromCart } from "../Redux/Action/Action";
 import "./Cart.css"
 
 export const Cart = ()=>{
     const cartData = useSelector((storeData)=>storeData.cart);
     const [count,setCount] = useState(1);
+    // const countRef = useRef(null);
+    const dispatch = useDispatch();
 
     const increaseCount = ()=>{
         setCount((count)=>count+1);
+        // countRef.current.innerText = "";
+        // countRef.current.innerText = countRef.current.value + 1;
+        // console.log(countRef.current)
     }
 
     const decreaseCount = ()=>{
         setCount((count)=>count-1);
+    }
+
+    const handleCart = (index)=>{
+       DeleteFromCart(cartData,index,dispatch)
     }
 
     return <div>
@@ -32,14 +42,16 @@ export const Cart = ()=>{
                     cartData.map((el,index)=>{
                         return <div className = "cartEle" key={index+1}>
                             <div style={{display:"flex",flexDirection:"row",width:"500px",marginRight:"5px"}}><img src={el.image} width="100px" height="80px" alt={el.title}/>
-                            <div><p>{el.title}</p>
-                            <p>In stock</p></div></div>
+                            <div><p className="ptag">{el.title}</p>
+                            <p className="sty">In stock</p>
+                            <div className="icon"><i class="fa-regular fa-heart"></i>  Save to Wishlist</div></div></div>
                             <p>{el.price}</p>
-                            <div style={{display:"flex",flexDirection:"row",gap:"10px"}}><button onClick={increaseCount}>+</button>
-                            <p> {count} </p>
-                            <button disabled={count === 1 ? true : false} onClick={decreaseCount}>-</button></div>
-                            <p>{el.price}</p>
-                            <p>*</p>
+                            <div style={{display:"flex",flexDirection:"row",gap:"10px"}}><button disabled={count === 1 ? true : false} onClick={decreaseCount}>-</button>
+                            <p>{count}</p>
+                            <button onClick={increaseCount}>+</button>
+                            </div>
+                            <p>{Math.round(el.price*count * 100) / 100}</p>
+                            <img src="https://th.bing.com/th/id/R.f6883ee1ce2e0e3755a1892da2fe7e3c?rik=ozgkFfeviLMaDg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_265949.png&ehk=gPghjaahwRbD4GGEcjuhCM8HJhQYy%2b2YzE5lGs5PvMo%3d&risl=&pid=ImgRaw&r=0" width="20px" height="20px" style={{marginTop:"15px"}} alt="" onClick={()=>handleCart(index)}/>
                         </div>
                     })
                 }

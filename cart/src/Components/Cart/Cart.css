@@ -40,7 +40,7 @@
 
 .cartEle {
     width: 97%;
-    height: 150px;
+    height: 140px;
     margin: auto;
     margin-top: 20px;
     display: flex;
@@ -75,11 +75,29 @@ button {
   text-transform: none;
 }
 
-.cartEle > div > div > p{
+.ptag{
   font-size: 17px;
   font-weight: 600;
   color: #555;
   letter-spacing: 1px;
   font-family: Courier;
+  text-transform: none;
+}
+.sty{
+  font-size: 16px;
+  font-weight: 500;
+  color: #555;
+  letter-spacing: 1px;
+  font-family:'Times New Roman', Times, serif;
+  text-transform: none;
+}
+
+.icon{
+  font-size: 16px;
+  font-weight: 500;
+  margin-top: 35px;
+  color: #555;
+  letter-spacing: 1px;
+  font-family:'Times New Roman', Times, serif;
   text-transform: none;
 }

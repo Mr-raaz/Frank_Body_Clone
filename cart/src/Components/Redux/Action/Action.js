@@ -1,6 +1,10 @@
- export const AddToCartAction = (data,dispatch)=>{
-     dispatch({
-        type : "Add_To_Cart",
-        payload : data,
-     })
+
+ export const DeleteFromCart = (data,index,dispatch)=>{
+    data.splice(index,1);
+    var NewArr = [...data];
+    
+    dispatch({
+        type : "Delete_From_Cart",
+        payload : NewArr,
+    })
  }
