@@ -27,6 +27,18 @@ function Banner() {
 That's why over 6 million babes have fallen in love with me.</p>
             </div>
 
+            <div className="aboutMesection">
+                <div>
+                    <img src="https://static.thcdn.com/images/medium/webp/widgets/289-eu/51/original-frank-body-about-us-slot2_749w-x-561h-104951.jpg" alt="Not found" />
+                </div>
+                <div>
+
+                    <h3>My story.</h3> <br />
+                        <p>Several years ago in a coffee shop, five friends had a drink and an idea: a humble coffee scrub. Their mission was to remove the hyperbole that saturates the skincare industry and make clean skincare fun. So they called me frank and I've been getting babes dirty since.
+That simple, that good.</p>
+                </div>
+            </div>
+
             
         </>
     );

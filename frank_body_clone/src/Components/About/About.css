@@ -72,3 +72,28 @@
     margin-top: 20px;
     padding: 0px 30%;
 }
+
+.aboutMesection{
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutMesection > div:first-of-type{
+    width: 50%;
+}
+
+.aboutMesection > div:last-of-type{
+    width: 45%;
+    
+}
+
+.aboutMesection > div img{
+    width:90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
