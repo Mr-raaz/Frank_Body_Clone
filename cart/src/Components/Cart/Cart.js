@@ -43,6 +43,7 @@ export const Cart = ()=>{
     }
 
     return <div>
+
         <div className="head">
         <p>Your Shopping Basket</p>
 
@@ -50,6 +51,8 @@ export const Cart = ()=>{
 
         <button>CHECKOUT SECURELY NOW</button>
         </div>
+
+
         <div>
             <div className="item-heading">
                 <p style={{width:"530px"}}>ITEMS</p>
@@ -58,6 +61,9 @@ export const Cart = ()=>{
                 <p>SUBTOTAL</p>
                 <p></p>
             </div>
+
+
+
             <div>
                 {
                     cartData.map((el,index)=>{
@@ -85,21 +91,34 @@ export const Cart = ()=>{
                 }
             </div>
         </div>
+
+
+
         <div className="subtotal">
             <p> <i class="fa-regular fa-star"></i> Complete your order to earn {Math.round(totalPrice/32)} points</p>
             <div style={{display:"flex",flexDirection:"row",width:"38%",gap:"80px"}} >
                 <p>Basket Subtotal : </p> 
-                <p>{Math.round(totalPrice * 100)/100}₹</p></div></div>
+                <p>{Math.round(totalPrice * 100)/100}₹</p>
+            </div>
+        </div>
+
+
+
         <div className="discount">
             <div className="discount-child">
                 <input type="text" placeholder="Got a discount code ? Enter it here" ref={discountRef}/>
-                <button onClick={discount}>Add</button></div>
+                <button onClick={discount}>Add</button>
             </div>
+        </div>
+
+
+
         <div className="foot">
 
             {/* Link the continue Shopping button  */}
 
             <button>CONTINUE SHOPPING</button>
+
             <div className="foot-child">
 
                 {/* Link CHECKOUT SECURELY button  */}
@@ -113,6 +132,9 @@ export const Cart = ()=>{
                 </div>
             </div>
         </div>
+
+
+
         <div className="chat">
             <div className="chat-child1">
                 <img src = "https://th.bing.com/th/id/R.62ad0b526a35b3544436f5b6cfb32d55?rik=hd%2fiMU%2bQR5BExA&riu=http%3a%2f%2fwww.typemedia2011.com%2fdata%2fbigletters%2fSuperhero-Joetheplumber_f.png&ehk=QgLj6avEe%2fATXH3jCazKhlmrhtliOsyqSfo3UlAqQBk%3d&risl=&pid=ImgRaw&r=0" width="60px" height="60px" alt = ""/>
@@ -126,5 +148,6 @@ export const Cart = ()=>{
                 <button>START CHAT</button>
             </div>
         </div>
+
     </div>
 }

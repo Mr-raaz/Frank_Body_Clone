@@ -1,11 +1,14 @@
+import { useSelector } from "react-redux";
 import { Cart } from "./Components/Cart/Cart";
-// import {EmptyCart} from "./Components/EmptyCart/EmptyCart"
+import { EmptyCart } from "./Components/EmptyCart/EmptyCart";
 
 function App() {
+  const cartData = useSelector((data)=>data.cart);
   return (
     <div className="App">
-      {/* <EmptyCart/> */}
-      <Cart/>
+      {
+        cartData.length > 0 ? <Cart/> : <EmptyCart/>
+      }
     </div>
   );
 }
