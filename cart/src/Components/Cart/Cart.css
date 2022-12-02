@@ -262,7 +262,7 @@
   text-align: center;
   padding: 10px;
 }
-/* .chat-child2 > button {
+.chat-child2 > button {
      width: 650px;
     height: 42px;
     border: none;
@@ -274,5 +274,5 @@
     letter-spacing: 1px;
     font-weight: 600;
     font-family: 'Courier New';
-} */
+}
 

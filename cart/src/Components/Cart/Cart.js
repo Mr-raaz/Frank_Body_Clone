@@ -121,10 +121,10 @@ export const Cart = ()=>{
                     <p>Our Operators are <span style={{color:"darkgreen" , fontFamily:"Helvetica"}}>Online</span></p>
                 </div>
             </div>
-            {/* <div className="chat-child2">
+            <div className="chat-child2">
                 <p>Average connection time 25 secs</p>
                 <button>START CHAT</button>
-            </div> */}
+            </div>
         </div>
     </div>
 }
