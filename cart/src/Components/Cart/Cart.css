@@ -200,6 +200,11 @@
     font-weight: 600;
     font-family: 'Courier New';
 }
+.foot-child > button:hover{
+  background-color: pink;
+  color: black;
+  border: 1px solid black;
+}
 .foot-child{
   display: flex;
   flex-direction: column;
@@ -217,8 +222,57 @@
 }
 .chat{
   width: 97%;
+  display: flex;
+  flex-direction: row;
   height: 100px;
   margin: auto;
   margin-bottom: 45px;
   border: 1px solid black;
 }
+.chat-child1{
+  width: 27%;
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(251, 162, 176);
+  height: 100%;
+}
+.chat-child1 > img{
+  margin: auto;
+  border-radius: 40px;
+  background-color: #fff;
+  /* border: 1px solid red; */
+}
+.chat-child1 > div{
+  margin: auto;
+  margin-left: -15px;
+}
+.font-sty{
+  font-size: 16px;
+  font-weight: 600;
+  color: rgb(37, 30, 30);
+  letter-spacing: 1px;
+  font-family: 'Courier New', Courier, monospace;
+  text-transform: none;
+}
+.chat-child2{
+  margin: auto;
+  margin-top: -15px;
+  display: block;
+  height: 100px;
+  text-align: center;
+  padding: 10px;
+}
+/* .chat-child2 > button {
+     width: 650px;
+    height: 42px;
+    border: none;
+    margin: auto;
+    padding: 8px 16px;
+    background-color: #3f2a2d;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Courier New';
+} */
+

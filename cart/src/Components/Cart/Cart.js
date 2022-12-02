@@ -106,19 +106,25 @@ export const Cart = ()=>{
 
                 <button>CHECKOUT SECURELY NOW</button>
                 <div>
-                    <img src= "https://www.onlinecasinos.org.uk/images/CASINO/Banking/gpay.png" width="60px" height="35px" alt=""/>
-                    <img src= "https://th.bing.com/th/id/R.da6e94dd3c89f40db67c3876d27674dd?rik=aBIV9h1KtgQbLg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-c-anBBTMiTw%2fTVfnxr6OGvI%2fAAAAAAAAJQ4%2f7fNAYeoff8o%2fs1600%2fpaypal_logo16.jpg&ehk=Fo%2fIl8nSvF8o5aqMGL3ejj7a9jWYwEZppOmB8y9TMl0%3d&risl=&pid=ImgRaw&r=0" width="60px" height="35px" alt=""/>
-                    <img src= "https://www.aboutwebsites.info/wp-content/uploads/2020/11/Paytm-Logo.jpg" width="60px" height="35px" alt=""/>
-                    <img src= "https://laudco.com/storage/case-studies/July2019/gyKfHOjRAPp7JiqiAT01.png" width="60px" height="35px" alt=""/>
+                    <img src= "https://www.onlinecasinos.org.uk/images/CASINO/Banking/gpay.png" width="60px" height="30px" alt=""/>
+                    <img src= "https://th.bing.com/th/id/R.da6e94dd3c89f40db67c3876d27674dd?rik=aBIV9h1KtgQbLg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-c-anBBTMiTw%2fTVfnxr6OGvI%2fAAAAAAAAJQ4%2f7fNAYeoff8o%2fs1600%2fpaypal_logo16.jpg&ehk=Fo%2fIl8nSvF8o5aqMGL3ejj7a9jWYwEZppOmB8y9TMl0%3d&risl=&pid=ImgRaw&r=0" width="60px" height="30px" alt=""/>
+                    <img src= "https://www.aboutwebsites.info/wp-content/uploads/2020/11/Paytm-Logo.jpg" width="60px" height="30px" alt=""/>
+                    <img src= "https://laudco.com/storage/case-studies/July2019/gyKfHOjRAPp7JiqiAT01.png" width="60px" height="30px" alt=""/>
                 </div>
             </div>
         </div>
         <div className="chat">
             <div className="chat-child1">
-                
+                <img src = "https://th.bing.com/th/id/R.62ad0b526a35b3544436f5b6cfb32d55?rik=hd%2fiMU%2bQR5BExA&riu=http%3a%2f%2fwww.typemedia2011.com%2fdata%2fbigletters%2fSuperhero-Joetheplumber_f.png&ehk=QgLj6avEe%2fATXH3jCazKhlmrhtliOsyqSfo3UlAqQBk%3d&risl=&pid=ImgRaw&r=0" width="60px" height="60px" alt = ""/>
+                <div>
+                    <p className="font-sty">Live Chat</p>
+                    <p>Our Operators are <span style={{color:"darkgreen" , fontFamily:"Helvetica"}}>Online</span></p>
+                </div>
             </div>
-            <div className="chat-child2">
-            </div>
+            {/* <div className="chat-child2">
+                <p>Average connection time 25 secs</p>
+                <button>START CHAT</button>
+            </div> */}
         </div>
     </div>
 }
