@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -52,4 +53,22 @@
     color: white;
     text-align: justify;
     line-height: 25px;
+}
+
+.welcomeSection{
+    /* border: 1px solid red; */
+    margin-top: 3%;
+    text-align: center;
+}
+
+.welcomeSection h2 {
+    /* font-family: 'Satisfy', cursive !important; */
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.welcomeSection p{
+    font-family: 'Satisfy', cursive !important;
+    margin-top: 20px;
+    padding: 0px 30%;
 }

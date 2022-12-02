@@ -21,8 +21,13 @@ function Banner() {
 
 
             <div className="welcomeSection">
-                
+
+                <h2>Welcome to #thefrankeffect.</h2>
+                <p>I don’t take myself too seriously but I’m serious about the right thing.
+That's why over 6 million babes have fallen in love with me.</p>
             </div>
+
+            
         </>
     );
 }
