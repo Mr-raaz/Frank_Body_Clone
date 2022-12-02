@@ -156,8 +156,69 @@
 .discount-child > button{
   width: 18%;
   height: 46px;
+  background-color: white;
+  border: 1px solid black;
 }
 .discount-child > button:hover{
   background-color: pink;
+  border: 1px solid black;
+}
+
+.foot{
+  padding: 20px;
+  display: flex;
+  height: 110px;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.foot > button{
+  width: 19%;
+  height: 44px;
+  font-size: 17px;
+  font-weight: 600;
+  color: rgb(45, 39, 39);
+  letter-spacing: 1px;
+  font-family: Courier;
+  text-transform: none;
+  border-radius: none;
+  background-color: white;
+  border: 1px solid black;
+}
+.foot > button:hover{
+   background-color: pink;
+   border: 1px solid black;
+}
+.foot-child > button{
+    width: 300px;
+    height: 46px;
+    border: none;
+    padding: 8px 16px;
+    background-color: #3f2a2d;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Courier New';
+}
+.foot-child{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.foot-child > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.foot-child > div > img{
+  border: 1px solid #999;
+  padding: 4px;
+  border-radius: 4px;
+}
+.chat{
+  width: 97%;
+  height: 100px;
+  margin: auto;
+  margin-bottom: 45px;
   border: 1px solid black;
 }
