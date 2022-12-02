@@ -3,22 +3,34 @@ import banner from './img/banner.png';
 import teddy from './img/teddy.webp';
 import heart from './img/heart.webp';
 import oneMore from './img/oneMore.webp';
+import {motion as m} from 'framer-motion';
+
 function Banner() {
     return (
         <>
             <div className="banner_outer">
 
-                <div>
+                <m.div
+                initial={{x:"-100%"}}
+            animate={{x:"0%"}}
+            transition={{duration:0.55 , ease: "easeOut"}}
+            exit={{opacity:1}}
+                >
                         <img src={banner} alt="Not found" />
 
-                </div>
+                </m.div>
 
 
-                <div className='second_div_about'>
+                <m.div className='second_div_about'
+                initial={{x:"100%"}}
+            animate={{x:"0%"}}
+            transition={{duration:0.55 , ease: "easeOut"}}
+            exit={{opacity:1}}
+                >
 
                     <div><h2>About Us</h2></div>
                      <p><q className='testingQuote'> Frank Body is a one stop shop for all your fashion and lifestyle needs. Being India's largest e-commerce store for fashion and lifestyle products, Myntra aims at providing a hassle free and enjoyable shopping experience to shoppers across the country with the widest range of brands and products on its portal. The brand is making a conscious effort to bring the power of fashion to shoppers with an array of the latest and trendiest products available in the country </q></p>
-                </div>
+                </m.div>
 
 
             </div>
