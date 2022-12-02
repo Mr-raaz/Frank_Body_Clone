@@ -28,6 +28,11 @@
     font-weight: 600;
     font-family: 'Courier New';
 }
+.head > button:hover{
+  background-color: pink;
+  color: black;
+  border: 1px solid black;
+}
 
 .item-heading {
     width: 97%;
@@ -49,13 +54,13 @@
     border-bottom: 1px solid #999;
 }
 
-button {
+.cartEle > div > button {
     width: 40px;
     height: 40px;
     margin-top: 7px;
 }
 
-.item-heading>p {
+.item-heading > p {
     font-size: 18px;
   line-height: 1;
   font-weight: 600;
@@ -100,4 +105,59 @@ button {
   letter-spacing: 1px;
   font-family:'Times New Roman', Times, serif;
   text-transform: none;
+}
+
+.subtotal{
+  width: 97%;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: 1px solid #999;
+}
+
+.subtotal > p{
+  font-size: 14px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 1px;
+  font-family: Courier;
+  text-transform: none;
+}
+
+.subtotal >div > p{
+  font-size: 16px;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 1px;
+  font-family: Courier;
+  text-transform: none;
+}
+
+.discount {
+  width: 97%;
+  margin: auto;
+  border-bottom: 1px solid #999;
+}
+.discount-child {
+  width: 40%;
+  padding: 10px;
+  margin: auto;
+}
+.discount-child > input{
+  width: 60%;
+  height: 40px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  letter-spacing: .3px;
+  text-transform: none;
+}
+.discount-child > button{
+  width: 18%;
+  height: 46px;
+}
+.discount-child > button:hover{
+  background-color: pink;
+  border: 1px solid black;
 }

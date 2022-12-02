@@ -8,3 +8,10 @@
         payload : NewArr,
     })
  }
+
+ export const AddQuantityKey = (data,dispatch)=>{
+//     data.map((el)=>{
+//     return el.quantity = 1;
+//    })
+//    console.log(newArr);
+ }
