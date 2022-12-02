@@ -1,5 +1,8 @@
 import React from 'react';
 import banner from './img/banner.png';
+import teddy from './img/teddy.webp';
+import heart from './img/heart.webp';
+import oneMore from './img/oneMore.webp';
 function Banner() {
     return (
         <>
@@ -7,6 +10,7 @@ function Banner() {
 
                 <div>
                         <img src={banner} alt="Not found" />
+
                 </div>
 
 
@@ -39,7 +43,32 @@ That simple, that good.</p>
                 </div>
             </div>
 
-            
+            <div className="detail_about">
+
+               <div>
+                <img src={teddy} alt="Not found" />
+                <h3>CRUELTY FREE.</h3>
+                <p>My products are all naturally derived and cruelty-free, tested on babes not bunnies. Available on your demand.</p>
+               </div>
+
+
+
+
+
+               <div>
+                <img src={heart} alt="Not found" />
+                <h3>
+                VEGAN.
+                </h3>
+                <p>Most of my products are vegan too. Because living a vegan, cruelty-free life is about more than what you put in your body.</p>
+               </div>
+               <div>
+                <img src={oneMore} alt="Not Found" />
+                <h3>AUSTRALIAN MADE.</h3>
+                <p>It’s not my beaches that make Australia different. It’s how you feel on them: relaxed. My approach to beauty is the same.</p>
+               </div>
+
+            </div>
         </>
     );
 }
