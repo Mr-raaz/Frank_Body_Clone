@@ -160,7 +160,7 @@ function SimilarProducts() {
 
 {
     recommendaded.map((elem)=>{
-        return <SwiperSlide> <LtdCard {...elem}/></SwiperSlide>
+        return <SwiperSlide> <LtdCard data={elem}/></SwiperSlide>
     })
 }
         

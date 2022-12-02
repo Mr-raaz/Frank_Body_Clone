@@ -1,7 +1,23 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import {motion as m } from 'framer-motion';
-import { useNavigate } from 'react-router-dom';
-function Card({url_1 , prod_name , best_price  , id , func}) {
+import { useAsyncError, useNavigate } from 'react-router-dom';
+import {addToCart , quantityZero} from '../../../../ReduxStore/Actions/mainAction';
+import { useDispatch } from 'react-redux';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faPlus , faMinus} from '@fortawesome/free-solid-svg-icons';
+import { useSelector } from 'react-redux';
+
+function Card({data}) {
+
+    let {url_1 , prod_name , best_price  , id , cartStatus} = data;
+
+    const cartData = useSelector((cartdata) => cartdata.cart);
+
+    const [cartState , currCartState] = useState(cartStatus);
+    
+    const [quant , setQuant] = useState(1);
+
+    const dispatc = useDispatch();
 
     const navigate = useNavigate();
 
@@ -11,8 +27,32 @@ function Card({url_1 , prod_name , best_price  , id , func}) {
     }
 
     function clickcheck(){
-        alert("click Check working")
+        addToCart(data , dispatc , id);
+        navigate('/cart');
     }
+
+    function addtoc(){
+
+        currCartState(true);
+
+        addToCart(data , dispatc , id);
+
+    }
+
+    function handleIncrementDec(val){
+
+        if(quant + val >= 1){
+            setQuant(quant + val)
+        }
+
+        if(quant + val == 0){
+            currCartState(false);
+
+            quantityZero(cartData , dispatc , id);
+        }
+        
+    }
+
 
     return (
         <>
@@ -40,7 +80,14 @@ function Card({url_1 , prod_name , best_price  , id , func}) {
                                 </div>
 
                                 <div className='card_buttons'>
-                                    <span><button className='atc' >Add To Cart</button></span>
+                                    {
+                                        cartState ? <span className='product_page_counter'>
+                                        <button onClick={()=>handleIncrementDec(-1)}><FontAwesomeIcon icon={faMinus}/></button>
+                        <span>{quant}</span>
+                            <button onClick={()=>handleIncrementDec(+1)}><FontAwesomeIcon icon={faPlus}/></button>
+                                        </span> :<span><button className='atc' onClick={addtoc}>Add To Cart</button></span>
+
+                                    }
                                     <span><button className='bn' onClick={clickcheck}> Buy Now</button></span>
                                 </div>
 

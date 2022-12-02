@@ -133,7 +133,7 @@ function Product_List() {
                     
 
                    {
-                    currActiveCat != "All Products" ? <Card key={idx+22} {...elem}/> : <> {idx >=(currpage*10) && idx<((currpage+1)*10) ? <Card key={idx+22} {...elem}/> : null} </>
+                    currActiveCat != "All Products" ? <Card key={idx+22} data ={elem}/> : <> {idx >=(currpage*10) && idx<((currpage+1)*10) ? <Card key={idx+22} data = {elem}/> : null} </>
                    }
                 
 

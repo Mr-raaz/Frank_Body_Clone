@@ -175,7 +175,7 @@
     border: 1px solid black;
 }
 
-.atcbtn3 button:last-of-type{
+.atcbtn3 > button:last-of-type{
     margin-left: 40px;
     padding: 10px 60px;
     background-color: #e76364;
@@ -260,4 +260,32 @@
     letter-spacing: 4px;
     background-color: antiquewhite;
     padding: 10px;
+}
+
+.product_page_counter_detail{
+    /* border: 1px solid red; */
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+
+.product_page_counter_detail >  button{
+    padding: 10px 20px;
+    /* border: 1px solid blue; */
+    border: none;
+}
+.product_page_counter_detail button:last-of-type{
+    padding: 10px 20px;
+    background-color: #e76364;
+    color: white;
+    border: none;
+}
+.product_page_counter_detail span{
+    font-weight: bold;
+    font-size: 30px;
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 20px;
 }

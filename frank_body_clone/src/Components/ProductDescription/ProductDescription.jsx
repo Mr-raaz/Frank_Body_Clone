@@ -37,7 +37,7 @@ function ProductDescription() {
 
             {
                 currProd.map((elem)=>{
-                    return <Details_page key={elem.id} {...elem}/>
+                    return <Details_page key={elem.id} data={elem}/>
                 })
             }
 

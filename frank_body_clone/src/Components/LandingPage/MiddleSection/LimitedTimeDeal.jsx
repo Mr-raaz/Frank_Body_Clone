@@ -12,12 +12,13 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faClock , faAngleRight} from '@fortawesome/free-solid-svg-icons';
 import Timer from './Timer';
 import LtdCard from './LtdCard';
-function LimitedTimeDeal({name}) {
+function LimitedTimeDeal() {
 
 
     const [data , updateData] = useState([])
 
     function updateTrending(val){
+        
         updateData(val)
     }
 
@@ -46,7 +47,7 @@ function LimitedTimeDeal({name}) {
       >
         {
             data.map((elem , idx)=>{
-                return <SwiperSlide key={idx+93}><LtdCard  key={idx+9} {...elem}/></SwiperSlide>
+                return <SwiperSlide key={idx+93}><LtdCard  key={idx+9} data = {elem}  /></SwiperSlide>
             })
         }
       </Swiper>

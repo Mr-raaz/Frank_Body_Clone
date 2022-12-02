@@ -34,6 +34,11 @@ export default function ProductReducer(data = initialData , action){
                 cart:[...data.cart , action.payload]
             }
 
+        case "DELETE":
+                return  {
+                     ...data,
+                     cart: [...action.payload]
+                 }
     
         default :{
             return data;

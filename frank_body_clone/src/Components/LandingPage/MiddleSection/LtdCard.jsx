@@ -1,11 +1,52 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-function LtdCard({id , url_1 , prod_name , best_price , mrp}) {
+import {addToCart , quantityZero} from '../../../ReduxStore/Actions/mainAction';
+import { useDispatch } from 'react-redux';
+import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
+import {faPlus , faMinus} from '@fortawesome/free-solid-svg-icons';
+import { useSelector } from 'react-redux';
+function LtdCard({data}) {
+
+    let {id, url_1 , prod_name , best_price , mrp , cartStatus} = data;
+
+    const [curr , setCurr] = useState(cartStatus);
+    
+    const [quant , setQuant] = useState(1);
+
+    const cartData = useSelector((cartdata) => cartdata.cart);
+
+    const dispatch = useDispatch()
+
     const navigate = useNavigate();
 
     function detailClick(){
+
         navigate(`/details/${id}`)
+
     }
+
+    function addToCartbtn(){
+        setCurr(true);
+
+        addToCart(data ,dispatch , id);
+
+    }
+
+    function handleIncrementDec(val){
+
+        if(quant + val >= 1){
+            setQuant(quant + val)
+        }
+
+        if(quant + val == 0){
+            setCurr(false);
+
+            quantityZero(cartData , dispatch , id);
+        }
+        
+    }
+
+    
 
 
     return (
@@ -20,7 +61,17 @@ function LtdCard({id , url_1 , prod_name , best_price , mrp}) {
             </div>
 
             <div>
-                <button className='atcbtn2' >Add To Cart</button>
+                    {curr ? <>
+                        <div className='quant-div'>
+                        <button onClick={()=>handleIncrementDec(-1)}><FontAwesomeIcon icon={faMinus}/></button>
+                        <span>{quant}</span>
+                            <button onClick={()=>handleIncrementDec(+1)}><FontAwesomeIcon icon={faPlus}/></button>
+                            
+                            
+                        </div>
+                    </> : <button className='atcbtn2' onClick={addToCartbtn}>Add To Cart</button> }
+
+                    
             </div>
         </div>
     );

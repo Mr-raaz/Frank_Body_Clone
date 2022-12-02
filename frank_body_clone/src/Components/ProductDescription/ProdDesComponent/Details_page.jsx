@@ -1,10 +1,25 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
-function Details_page({ prod_name, url_1, url_2  , categories , mrp , best_price}) {
+import {faPlus , faMinus} from '@fortawesome/free-solid-svg-icons';
+import { useSelector } from "react-redux";
+import { useDispatch } from "react-redux";
+import {addToCart , quantityZero} from '../../../ReduxStore/Actions/mainAction';
+import { useNavigate } from "react-router-dom";
+function Details_page({data}) {
 
 
+  let {id ,  prod_name, url_1, url_2  , categories , mrp , best_price , cartStatus} = data;
 
+  const cartData = useSelector((cartdata) => cartdata.cart);
+
+  const [cartState , currCartState] = useState(cartStatus);
+  
+  const [quant , setQuant] = useState(1);
+
+  const dispatc = useDispatch();
+
+  const navigate = useNavigate();
 
   const [currImg , setCurr] = useState(url_1);
 
@@ -17,6 +32,33 @@ function Details_page({ prod_name, url_1, url_2  , categories , mrp , best_price
     if(val == 4) setCurr("https://images-static.nykaa.com/media/catalog/product/e/0/e0ca2ce3607347879367_6.jpg")
     if(val == 0) setCurr(url_1);
   }
+
+
+  function addToCartDes(){
+
+    currCartState(true);
+
+    addToCart(data , dispatc , id);
+
+  }
+  function buyNowTrigger(){
+    addToCart(data , dispatc , id);
+    navigate('/cart');
+  }
+
+  function handleIncrementDec(val){
+
+    if(quant + val >= 1){
+        setQuant(quant + val)
+    }
+
+    if(quant + val == 0){
+        currCartState(false);
+
+        quantityZero(cartData , dispatc , id);
+    }
+    
+}
 
 
   return (
@@ -91,8 +133,18 @@ function Details_page({ prod_name, url_1, url_2  , categories , mrp , best_price
             </div>
 
             <div className="atcbtn3">
-                <button>Add To Cart</button>
-                <button>Buy Now</button>
+                {
+                  cartState ? <>
+                  <span className='product_page_counter_detail'>
+                                        <button onClick={()=>handleIncrementDec(-1)}><FontAwesomeIcon icon={faMinus}/></button>
+                        <span>{quant}</span>
+                            <button onClick={()=>handleIncrementDec(+1)}><FontAwesomeIcon icon={faPlus}/></button>
+                                        </span>
+
+
+                  </> : <button onClick={addToCartDes}>Add To Cart</button>
+                }
+                <button onClick={buyNowTrigger}>Buy Now</button>
             </div>
         </div>
       </div>

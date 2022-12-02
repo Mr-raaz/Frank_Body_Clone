@@ -4,11 +4,17 @@ export default function AddProducts(dispatch , updatefilte){
         const res = await fetch('https://frankbodyapi.herokuapp.com/products');
         const data = await res.json();
 
-        updatefilte(data);
+        let temp = data.map((elem)=>{
+
+            return {...elem}
+
+        })
+
+        updatefilte(temp)
         
         dispatch({
             type:"ADDDATA",
-            payload:data
+            payload:temp
     
         })
     }
@@ -37,13 +43,49 @@ function setSortingOrder(curr , dispatch){
 }
 
 
-function addToCart(data , dispatch){
+function addToCart(data , dispatch , id){
+
+const actual = {...data , cartStatus:true};
+
+fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
+        method:'PATCH',
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body:JSON.stringify({
+            "cartStatus" : true
+        })
+    })
+
 
     dispatch({
         type:"ADD",
-        payload:data
+        payload:actual
     })
 }
 
+function quantityZero(data ,dispatch , id){
 
-export {setActiveCategory , setSortingOrder , addToCart};
+    fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
+        method:'PATCH',
+        headers:{
+            "Content-Type": "application/json"
+        },
+        body:JSON.stringify({
+            "cartStatus" : false
+        })
+    })
+
+    const newarr = data.filter((elem)=>{
+        return elem.id != id
+    })
+
+    dispatch({
+        type:"DELETE",
+        payload:newarr
+    })
+
+}
+
+
+export {setActiveCategory , setSortingOrder , addToCart , quantityZero};

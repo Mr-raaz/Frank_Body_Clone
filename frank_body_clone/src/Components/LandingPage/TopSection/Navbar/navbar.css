@@ -136,3 +136,25 @@ height: 100%;
 .ShowNow_btn:hover{
     cursor: pointer;
 }
+.cart_logo{
+    color: white;
+}
+
+.cartLogo_div{
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.cartQuant{
+    color: #e76364;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    background-color: white;
+    padding: 0px 5px;
+    border-radius: 50%;
+}

@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './navbar.css'
 import logo from '../img/log.png'
 import { NavLink } from 'react-router-dom';
 import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faMagnifyingGlass , faUser , faCartShopping} from '@fortawesome/free-solid-svg-icons';
 import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 function Navbar() {
+
+    const cartitem = useSelector((store) => store.cart);
+
+    // const [cartLen , updatelen] = useState(cartitem.length);
+
 
     const navigate = useNavigate();
 
@@ -28,9 +34,14 @@ function Navbar() {
                             </ul>
                     </div>
                     <div className='navbar_icons'>
-                    <FontAwesomeIcon icon={faMagnifyingGlass} />
-                    <FontAwesomeIcon icon={faUser} />
-                    <FontAwesomeIcon icon={faCartShopping} />
+                    <NavLink ><FontAwesomeIcon icon={faMagnifyingGlass} className="cart_logo"/></NavLink>
+                    <NavLink to='/profile'><FontAwesomeIcon icon={faUser} className="cart_logo"/></NavLink>
+                    <NavLink to='/cart'><div className='cartLogo_div'>
+                    <FontAwesomeIcon icon={faCartShopping} className="cart_logo"/>
+                    {
+                        cartitem.length == 0 ? null :<p className='cartQuant'>{cartitem.length}</p>
+                    }
+                    </div></NavLink>
 
                     </div>
                 </div>

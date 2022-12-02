@@ -353,3 +353,38 @@ margin-left: 25px;
     stroke: black !important;
     border-radius: 50%;
   }
+
+
+
+.product_page_counter{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.product_page_counter > button{
+    padding: 4px 7px;
+    cursor: pointer;
+}
+.product_page_counter > button:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.product_page_counter > span{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.product_page_counter > button:last-of-type{
+    border: none;
+    background-color: #e76364;
+    color: #fff;
+    border-radius: 15px;
+}
+
+.product_page_counter > button:first-of-type{
+    border: none;
+    background-color: antiquewhite;
+    color: black;
+    border-radius: 15px;
+}
