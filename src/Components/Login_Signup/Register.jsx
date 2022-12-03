@@ -5,6 +5,9 @@ import { useNavigate } from 'react-router-dom';
 import './Login.css'
 import {faGoogle , faFacebook} from '@fortawesome/free-brands-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { ToastContainer, toast } from 'react-toastify';
+import {toast as tt} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 const intialregisterdata = {
@@ -40,7 +43,16 @@ function Register() {
       arr.map((elem)=>{
         if(elem.email === registationdata.email)
         {
-          alert("User already Exists");
+          toast.warn('User Already Exists', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
           setregistationdata(intialregisterdata);
           count++;
         }
@@ -51,8 +63,22 @@ function Register() {
    arr.push(registationdata);
     localStorage.setItem("RegisterItems",JSON.stringify(arr));
     setregistationdata(intialregisterdata);
-    alert('Registration SuccessFull')
-      navigate('/login');
+    
+    // alert('Register Success');
+    tt.success('Successfully Registered', {
+      position: "top-center",
+      autoClose: 5000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: false,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      });
+
+      setTimeout(()=>{
+        navigate('/login');
+      },1000)
     }
     count=0;
    
@@ -86,7 +112,7 @@ function Register() {
             <input name="fname" type="text" placeholder="First name" value={fname} onChange={Handlechange} required/>
             <input name="lname" type="text" placeholder="Last name" value={lname} onChange={Handlechange} required/>
 
-
+            <ToastContainer  style={{zIndex:100000}}/>
             <span className='maysend'>You'll be sent an email with instructions to activate your account</span>
             <input  type="submit" value="REGISTER"/>
         </form>
@@ -96,7 +122,8 @@ function Register() {
         </div>
     </div>
                     
-
+    <ToastContainer  style={{zIndex:100000000}}/>
+    
 
     
                     </div>

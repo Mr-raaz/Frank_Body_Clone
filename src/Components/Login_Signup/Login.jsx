@@ -8,10 +8,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useDispatch } from 'react-redux';
 import {SetLogin} from '../../ReduxStore/Actions/mainAction';
  
-
-
-
-
+import { ToastContainer, toast } from 'react-toastify';
+import {toast as tt} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 
 
@@ -65,8 +64,19 @@ function Login() {
                         // console.log(loginstatus);
                         localStorage.setItem("Login_Status",true);
                         SetLogin(dispatch , true);
-                        alert('login Success');
-                        navigate('/')
+                        toast.success('Login Success', {
+                            position: "top-center",
+                            autoClose: 5000,
+                            hideProgressBar: false,
+                            closeOnClick: true,
+                            pauseOnHover: false,
+                            draggable: true,
+                            progress: undefined,
+                            theme: "light",
+                            });
+                        setTimeout(()=>{
+                            navigate('/')
+                        },1000)
                         
                         // return <Navigate to="/register" />
                     }
@@ -74,7 +84,16 @@ function Login() {
                 })
             }
             else{
-                alert("Register to login");
+                toast.error('Register To login', {
+                    position: "top-center",
+                    autoClose: 5000,
+                    hideProgressBar: false,
+                    closeOnClick: true,
+                    pauseOnHover: false,
+                    draggable: true,
+                    progress: undefined,
+                    theme: "light",
+                    });
               
             }
         }
@@ -143,7 +162,7 @@ function Login() {
         </div>
     </div>
 
-
+    <ToastContainer  style={{zIndex:100000000}}/>
 
     {/* here.. */}
 
