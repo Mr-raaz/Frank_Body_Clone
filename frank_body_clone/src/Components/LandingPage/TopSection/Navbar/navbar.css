@@ -13,6 +13,11 @@
     align-items: center;
     background-color: #e76364;
     padding: 10px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
 }
 
 .logodiv{
@@ -55,6 +60,7 @@ height: 100%;
     display: flex;
     justify-content: space-between;
     position: relative;
+    margin-top: 60px;
 }
 
 .top_banner > div:first-of-type{

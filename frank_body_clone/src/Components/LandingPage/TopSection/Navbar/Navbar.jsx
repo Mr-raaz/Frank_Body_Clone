@@ -10,7 +10,6 @@ function Navbar() {
 
     const cartitem = useSelector((store) => store.cart);
 
-    // const [cartLen , updatelen] = useState(cartitem.length);
 
 
     const navigate = useNavigate();
