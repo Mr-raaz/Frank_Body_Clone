@@ -94,5 +94,11 @@ function quantityZero(data ,dispatch , id){
 
 }
 
+function SetLogin(dispatch , status){
 
-export {setActiveCategory , setSortingOrder , addToCart , quantityZero};
+    dispatch({
+        type:"SetLogin",
+        payload:status,
+    })
+}
+export {setActiveCategory , setSortingOrder , addToCart , quantityZero , SetLogin};
