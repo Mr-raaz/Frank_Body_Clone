@@ -24,7 +24,8 @@ function ProductDescription() {
 
     async function getProductDetails(){
 
-        let res = await fetch(`https://frankbodyapi.herokuapp.com/products/${id}`);
+        // let res = await fetch(`https://frankbodyapi.herokuapp.com/products/${id}`);
+        let res = await fetch(`https://frankbody.onrender.com/products/${id}`);
         let data = await res.json()
 
         setProd([data]);

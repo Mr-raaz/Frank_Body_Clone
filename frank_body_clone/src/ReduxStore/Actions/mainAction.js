@@ -1,7 +1,8 @@
 export default function AddProducts(dispatch , updatefilte){
 
     async function getData(){
-        const res = await fetch('https://frankbodyapi.herokuapp.com/products');
+        // const res = await fetch('https://frankbodyapi.herokuapp.com/products');
+        const res = await fetch('https://frankbody.onrender.com/products');
         const data = await res.json();
 
         let temp = data.map((elem)=>{
@@ -47,7 +48,11 @@ function addToCart(data , dispatch , id){
 
 const actual = {...data , cartStatus:true};
 
-fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
+// fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
+
+    fetch(`https://frankbody.onrender.com/products/${id}`,{
+
+
         method:'PATCH',
         headers:{
             "Content-Type": "application/json"
@@ -66,7 +71,9 @@ fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
 
 function quantityZero(data ,dispatch , id){
 
-    fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
+    // fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
+
+        fetch(`https://frankbody.onrender.com/products/${id}`,{
         method:'PATCH',
         headers:{
             "Content-Type": "application/json"

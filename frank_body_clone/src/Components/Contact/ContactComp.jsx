@@ -4,6 +4,11 @@ import phone from './img/phone.gif';
 import mail from './img/mail.gif';
 import location from './img/location.gif';
 function ContactComp() {
+
+    function handleSubmit(e){
+        e.preventDefault();
+        e.target.reset();
+    }
     return (
         <>
             <div className="contact_outer">
@@ -42,8 +47,17 @@ function ContactComp() {
 
 
             <div className="contact_form_container">
-                <form>
-                    
+                <h2>Get In Touch</h2>
+                <form onSubmit={handleSubmit}>
+                    <div className="contact_line_container">
+                        <input type="text" placeholder='Your Name' />
+                        <input type="email"  placeholder='Email'/>
+                        <input type="number" placeholder='Contact' />
+                    </div>
+
+                    <textarea cols="80" rows="8"  className='textArea' placeholder='Describe Your Problem'></textarea>
+
+                    <button class="bubbly-button">Submit </button>
                 </form>
             </div>
         </>
