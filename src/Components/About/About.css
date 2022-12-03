@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.banner_outer{
+    background-color: #e76364;
+    height: 65vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 5%;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 0px;
+    margin-top: 60px;
+}
+
+.banner_outer > div{
+    height: 100%;
+}
+.banner_outer > div:first-of-type{
+    width: 40%;
+}
+.banner_outer > div img{
+    width: 100%;
+    height: 100.3%;
+}
+
+.second_div_about{
+    /* border: 1px solid red ; */
+    width: 55%
+}
+
+.second_div_about > div >  h2{
+    
+    color: white;
+    letter-spacing: 5px;
+    font-size: 40px;
+    border-bottom: 2px solid white;
+    display: inline;
+    padding: 0px 40px;
+    padding-top: 7%;
+}
+
+.second_div_about > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.second_div_about p{
+    /* border: 1px solid red; */
+    margin-top: 7%;
+    color: white;
+    text-align: justify;
+    line-height: 25px;
+}
+
+.welcomeSection{
+    /* border: 1px solid red; */
+    margin-top: 3%;
+    text-align: center;
+}
+
+.welcomeSection h2 {
+    /* font-family: 'Satisfy', cursive !important; */
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.welcomeSection p{
+    font-family: 'Satisfy', cursive !important;
+    margin-top: 20px;
+    padding: 0px 30%;
+}
+
+.aboutMesection{
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding: 2px 5%;
+    align-items: center;
+    text-align: center;
+}
+
+.aboutMesection > div:first-of-type{
+    width: 50%;
+}
+
+.aboutMesection > div:last-of-type{
+    width: 45%;
+    
+}
+
+.aboutMesection > div img{
+    width:90%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+}
+
+.detail_about{
+    margin-top: 60px;
+    background-color: antiquewhite;
+    /* height: 40vh; */
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 5px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 8%;
+    padding-bottom: 25px;
+}
+
+.detail_about > div{
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid red; */
+    width: 30%;
+    text-align: center;
+}
+.detail_about img{
+    height: 300px;
+    width: 100%;
+
+}
+
+.detail_about h3{
+    margin-top: -60px;
+}

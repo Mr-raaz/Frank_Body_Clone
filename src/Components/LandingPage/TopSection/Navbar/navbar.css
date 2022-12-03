@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&family=Poppins:ital,wght@0,100;0,200;0,600;0,700;0,800;1,100;1,400;1,500;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar_outer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e76364;
+    padding: 10px 3%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100000;
+}
+
+.logodiv{
+    width: 10%;
+    height: 40px;
+}
+
+.logo{
+    transition: 0.5s;
+}
+.logo:hover{
+cursor: pointer;
+scale: 1.02;
+}
+.logodiv > img{
+width: 100%;
+height: 100%;
+}
+.navList{
+    width: 40%;
+}
+.navList > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+.navbar_icons{
+    width: 12%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    color: white;
+}
+
+.top_banner{
+    height: 73vh;
+    background-color: #e76364;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-top: 60px;
+}
+
+.top_banner > div:first-of-type{
+    width: 60%;
+    padding: 5%;
+}
+.top_banner  img {
+    width: 100%;
+    height: 100%;
+}
+
+.topbanner_heading > h1{
+    color: white;
+    word-spacing: 3px;
+    letter-spacing: 3px;
+}
+.topbanner_heading > p{
+    color: white;
+    margin-top: 3%;
+}
+
+.ShowNow_btn{
+    margin-top: 10%;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+    color: #e76364;
+}
+
+.heading_bottom_div{
+    background-color: rgb(232, 227, 227);
+    height: 17.6vh;
+    padding: 10px 10%;
+}
+
+.checking{
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    background: url('../img//testingeffect.png');
+    opacity: 0.08;
+}
+
+.heading_bottom_div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.heading_bottom_div > div{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.heading_bottom_div > div > img{
+    width: 110%;
+}
+
+.navList  a{
+    color: rgb(226, 222, 222);
+    text-decoration: none;
+}
+.navList a.active{
+        font-weight: bold;
+        color: white;
+        letter-spacing: 2px;
+        border-bottom: 1.5px solid white;
+        padding-bottom: 5px;
+        border-bottom-style: dashed;
+}
+
+.navList  a:hover{
+    color: white;
+    font-weight: 600;
+}
+
+.ShowNow_btn:hover{
+    cursor: pointer;
+}
+.cart_logo{
+    color: white;
+}
+
+.cartLogo_div{
+    /* border: 1px solid red; */
+    position: relative;
+}
+
+.cartQuant{
+    color: #e76364;
+    text-decoration: none;
+    font-weight: bold;
+    border: none;
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    font-size: 12px;
+    background-color: white;
+    padding: 0px 5px;
+    border-radius: 50%;
+}

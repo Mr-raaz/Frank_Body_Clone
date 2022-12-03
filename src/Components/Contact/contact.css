@@ -1,0 +1,209 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.contact_outer{
+   text-align: center;
+   padding: 1% 5%;
+   font-size: 40px;
+   background-color: antiquewhite;
+   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   margin-top: 60px;
+}
+.contact_outer p{
+    padding: 1% 15%;
+    font-size: 16px;
+    font-weight: 600;
+    font-family: inherit;
+    color: rgb(79, 79, 79);
+}
+
+.contactDetails{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    padding: 3% 5%;
+}
+.contactDetails > div{
+    width: 30%;
+    height: 80px;
+    /* border: 1px solid blue; */
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.specific{
+    display: flex;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+.specific > div{
+    /* border: 1px solid red; */
+    width: 100%;
+    
+}
+.specific > div:first-of-type{
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.specific > div:last-of-type{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+
+.specific img{
+    width: 50px;
+    height: 50px;
+}
+
+.contact_form_container{
+    /* border: 1px solid red; */
+    width: 60%;
+    margin: auto;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding-bottom: 40px;
+}
+
+.contact_form_container input{
+    padding: 8px;
+    width: 32%;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 5px;
+}
+.contact_line_container{
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin-left: 10px;
+}
+
+.textArea{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 20px;
+    font-size: 18px;
+}
+
+input:focus{
+    border: 1px solid #e76364;
+    color: black;
+    font-weight: bold;
+}
+
+.contact_form_container h2{
+    text-align: center;
+    padding: 10px;
+    color: #e76364;
+    letter-spacing: 2px;
+    font-size: 30px;
+    border-bottom: 2px solid #e76364;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.bubbly-button {
+    font-family: 'Helvetica', 'Arial', sans-serif;
+    display: inline-block;
+    font-size: 1em;
+    padding: 0.9em 8em;
+    
+    /* margin-bottom: 60px; */
+    -webkit-appearance: none;
+    appearance: none;
+    background-color: #e76364;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+    position: relative;
+    transition: transform ease-in 0.1s, box-shadow ease-in 0.25s;
+    box-shadow: 0 2px 25px #e76364;
+    display: flex;
+    margin: auto;
+    margin-top: 35px;
+}
+.bubbly-button:focus {
+    outline: 0;
+}
+.bubbly-button:before, .bubbly-button:after {
+    position: absolute;
+    content: '';
+    display: block;
+    width: 140%;
+    height: 100%;
+    left: -20%;
+    z-index: -1000;
+    transition: all ease-in-out 0.5s;
+    background-repeat: no-repeat;
+}
+.bubbly-button:before {
+    display: none;
+    top: -75%;
+    background-image: radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, transparent 20%, #e76364 20%, transparent 30%), radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, transparent 10%, #e76364 15%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%);
+    background-size: 10% 10%, 20% 20%, 15% 15%, 20% 20%, 18% 18%, 10% 10%, 15% 15%, 10% 10%, 18% 18%;
+}
+.bubbly-button:after {
+    display: none;
+    bottom: -75%;
+    background-image: radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, transparent 10%, #e76364 15%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%), radial-gradient(circle, #e76364 20%, transparent 20%);
+    background-size: 15% 15%, 20% 20%, 18% 18%, 20% 20%, 15% 15%, 10% 10%, 20% 20%;
+}
+.bubbly-button:active {
+    transform: scale(0.9);
+    background-color: #e76364;
+    box-shadow: 0 2px 25px rgba(255, 0, 130, 0.2);
+}
+.bubbly-button.animate:before {
+    display: block;
+    animation: topBubbles ease-in-out 0.75s forwards;
+}
+.bubbly-button.animate:after {
+    display: block;
+    animation: bottomBubbles ease-in-out 0.75s forwards;
+}
+@keyframes topBubbles {
+    0% {
+        background-position: 5% 90%, 10% 90%, 10% 90%, 15% 90%, 25% 90%, 25% 90%, 40% 90%, 55% 90%, 70% 90%;
+   }
+    50% {
+        background-position: 0% 80%, 0% 20%, 10% 40%, 20% 0%, 30% 30%, 22% 50%, 50% 50%, 65% 20%, 90% 30%;
+   }
+    100% {
+        background-position: 0% 70%, 0% 10%, 10% 30%, 20% -10%, 30% 20%, 22% 40%, 50% 40%, 65% 10%, 90% 20%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+   }
+}
+@keyframes bottomBubbles {
+    0% {
+        background-position: 10% -10%, 30% 10%, 55% -10%, 70% -10%, 85% -10%, 70% -10%, 70% 0%;
+   }
+    50% {
+        background-position: 0% 80%, 20% 80%, 45% 60%, 60% 100%, 75% 70%, 95% 60%, 105% 0%;
+   }
+    100% {
+        background-position: 0% 90%, 20% 90%, 45% 70%, 60% 110%, 75% 80%, 95% 70%, 110% 10%;
+        background-size: 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%, 0% 0%;
+   }
+}

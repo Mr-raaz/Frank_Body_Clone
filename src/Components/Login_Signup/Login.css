@@ -1,0 +1,244 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.login_div{
+    margin-top: 60px;
+    /* border: 1px solid red; */
+    height: 90.6vh;
+    background-color:rgb(243, 240, 237);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inner_login_div{
+    width: 75%;
+    height: 90%;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+.inner_login_div > div{
+    /* border: 1px solid red; */
+}
+
+.inner_login_div > div{
+    height: 100%;
+}
+
+.inner_login_div > div:first-of-type{
+    width: 50%;
+}
+.inner_login_div > div:last-of-type{
+    width: 50%;
+}
+.inner_login_div > div:first-of-type img {
+    width: 100%;
+    height: 100%;
+}
+
+.formSide{
+    padding: 10px 0px;    
+}
+
+.formSide h1{
+    text-align: center;
+    letter-spacing: 3px;
+    color: #e76364;
+}
+
+
+/* other code */
+
+.loginconatiner{
+    padding: 0px 15%;
+    margin: auto;
+    text-align: center;
+    color: #4E3B3D;
+    
+}
+.loginform{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.loginform input{
+    padding: 12px 5px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 3px;
+}
+.login_form input:focus{
+    border: 2px solid #4E3B3D !important;
+    font-weight: 400 !important;
+}
+.loginform input:last-child{
+    background-color: #3F2A2D;
+    color: white;
+    border: none;
+    padding: 15px 0px 12px 0px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    margin-top: 20px;
+}
+.loginlinks{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+.loginlinksdata , .registerlinksdata{
+    text-decoration: none;
+    color: #584649;
+    font-size: 14px;
+}
+.loginform input:last-child:hover{
+    background-color: #e76364;
+    color: white;
+    border: none;
+    padding: 15px 0px 12px 0px;
+    cursor: pointer;
+}
+
+.login_img{
+    margin-top: 13px;
+}
+
+.login_img > img {
+    width: 80%;
+}
+
+.login_h2{
+   margin-top: 15px;
+   padding-bottom: 30px;
+}
+
+.loginlinks{
+    width: 100%;
+}
+.firstlink:hover{
+color: #3F2A2D;
+font-weight: bold;
+}
+
+
+
+
+.login_with_container{
+    /* border: 1px solid red; */
+    margin-top: 20px;
+    padding: 5px;
+}
+
+.login_btns{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0px 40px;
+}
+
+.login_btns button{
+    padding: 8px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.google{
+    color: #e76364;
+}
+.login_btns button:first-of-type{
+    color: #e76364;
+}
+
+.facebook{
+    color: blue;
+}
+.login_btns button:last-of-type{
+color: blue;
+}
+
+.login_btns button:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+
+
+
+/* Register Page Css Integrated here... */
+
+
+.registerconatiner{
+    padding: 0px 15%;
+    margin: auto;
+    text-align: center;
+    color: #4E3B3D;
+    
+
+}
+.registerform{
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+.registerform div{
+display: flex;
+flex-direction: row;
+}
+.registerform div span{
+margin-top: 5%;
+}
+
+.registerlinks{
+display: flex;
+justify-content: space-between;
+margin-top: 6%;
+justify-content: center;
+}
+.registerlinksdata{
+text-decoration: none;
+color: #584649;
+}
+
+.registerform input{
+padding: 12px 5px;
+outline: none;
+border: 1px solid grey;
+border-radius: 3px;
+}
+.registerform input:last-child{
+background-color: #3F2A2D;
+color: white;
+border: none;
+padding: 15px 0px 12px 0px;
+cursor: pointer;
+border-radius: 5px;
+font-weight: 600;
+letter-spacing: 2px;
+margin-top: 20px;
+}
+.registerform input:last-child:hover{
+    background-color: #e76364;
+    color: white;
+    border: none;
+    padding: 15px 0px 12px 0px;
+    cursor: pointer;
+}
+
+.cana{
+    margin-top: 10%;
+}
+.maysend{
+    font-size: 12px;
+    margin-top: 10px;
+}
