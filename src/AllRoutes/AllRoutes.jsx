@@ -12,6 +12,7 @@ import { useSelector } from 'react-redux';
 import ProductCategory from '../Components/ProductCategory/ProductCategory'
 import Payment from '../Components/PaymentPage/Payment';
 import Payment2 from '../Components/PaymentPage/Payment2';
+import PaymentDialouge from '../Components/PaymentPage/PaymentDialouge';
 function AllRoutes() {
 
     const isLogin = useSelector((store) => store.loginStatus);
@@ -32,6 +33,7 @@ function AllRoutes() {
                         <Route path='/category/:type' element={<ProductCategory />} />
                         <Route path='/checkout' element={<Payment />} />
                         <Route path='/payment' element={<Payment2 />} />
+                        <Route path = '/paymentDone' element={<PaymentDialouge />} />
                     </Routes>  
         </>
     );

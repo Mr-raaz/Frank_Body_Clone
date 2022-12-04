@@ -98,3 +98,295 @@
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
     cursor: pointer;
 }
+
+.outsdaferDiv{
+    /* border: 1px solid red; */
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px 5%;
+}
+
+.outsdaferDiv > div {
+    /* border: 1px solid blue; */
+    /* height: 300px; */
+}
+.detailsDiv{
+    width: 64%;
+}
+
+.otherDiv{
+    width: 30%;
+}
+
+.topSection{
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 15px 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.topSection img {
+    width: 30px;
+    height: 30px;
+}
+
+.topSection p {
+    font-size: 14px;
+    margin-left: 10px;
+}
+
+.paymentSection_two{
+    /* border: 1px solid red; */
+    margin-top: 15px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    /* padding: 10px; */
+    padding-top: 10px;
+}
+
+.paymentSection_two p {
+    font-size: 12px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    color: rgb(38, 37, 37);
+    padding: 0px 10px 0px 10px;
+}
+
+.paymentSection_two p:first-of-type{
+    margin-top: 5px;
+}
+
+.paymentSection_two > div {
+    /* border: 1px solid blue; */
+    padding-bottom: 20px;
+    border-bottom: 1px solid grey;
+}
+
+.line{
+    border-bottom: 1px solid grey;
+    margin-top: 15px;
+}
+
+.paid_p{
+    font-weight: bold;
+    color: rgb(57, 57, 57);
+    font-size: 18px;
+}
+
+.saved{
+    margin-top: 20px;
+    /* height: 30px; */
+    background-color: #e4f6e7;
+    padding: 10px 0px;
+}
+
+.saved p {
+    font-weight: 400;  
+}
+
+.sav{
+    color: #1aab2a;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.placeOrderBtn{
+    padding: 10px;
+    width: 100%;
+    margin-top: 20px;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    background-color: #e76364;
+    color: white;
+    cursor: pointer;
+}
+
+.placeOrderBtn:hover{
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+
+.detailsDiv{
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detailsDiv > div:first-of-type{
+width: 25%;
+background-color: antiquewhite;
+display: flex;
+flex-direction: column;
+}
+
+.detailsDiv > div:last-of-type{
+    width: 75%;
+}
+.detailsDiv > div:first-of-type button{
+    width: 100%;
+    padding: 18px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+
+.detailsDiv > div:first-of-type button{
+    margin-top: 10px;
+}
+
+.btnActive{
+    background-color: #e76364 !important;
+    color: white;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.btn_details{
+    padding: 20px;
+    /* border:  1px solid red; */
+}
+
+.walletPaymet{
+    /* border: 1px solid blue; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap:20px
+}
+
+.walletPaymet > div{
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    border-radius: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.walletPaymet > div img{
+    width: 150px;
+    height: 80px;
+}
+.linkwallet{
+    color: #e76364;
+    transition: 0.5s;
+}
+.linkwallet:hover{
+    cursor: pointer;
+    scale: 1.05;
+}
+
+
+.cardpayment{
+    /* border: 1px solid blue; */
+}
+
+
+.cardsSection{
+    width: 90%;
+    margin-top: auto;
+    margin-top: 20px;
+    padding: 0px 10px;
+    height: 100%;
+}
+
+.cardsSection > h5 {
+    color: #444343;
+}
+.cardsSection > p:first-of-type{
+     color: #5c5b5b;
+     font-size: 10px;
+     margin-top: 10px;
+}
+.cardsSection > p:first-of-type + p{
+    font-size: 12px;
+    margin-top: 40px;
+    color: #424040;
+}
+.number-detail{
+    font-size: 12px;
+    margin-top: 20px;
+    color: #424040;
+}
+input[type=number] {
+    -moz-appearance: textfield;
+  }
+  .expiry{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .expiry >div {
+    width: 40%;
+  }
+
+#Card_number{
+    width: 100%;
+    padding: 5px;
+    margin-top: 10px;
+    border: none;
+    outline: none;
+    border-bottom: 1.5px solid rgb(172, 171, 171);
+
+}
+#Card_number:hover , .upi_container input:hover{
+    border-bottom: 1.5px solid rgb(255, 121, 97);
+}
+
+.cardsSection input:last-child{
+    margin-top: 600px;
+}
+
+#make_payment{
+    float: right;
+    margin-top: 40px;
+    padding: 12px 20px;
+    background-color:RGB(255, 111, 97);
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+    
+#make_payment:hover{
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}
+
+.outerSlipContainer{
+    /* border: 1px solid red; */
+    position: absolute;
+    top: 0;
+    /* z-index: 9999999999; */
+    right: 0;
+    left: 0;
+    height: 100vh;
+    /* background-color: #eee; */
+    /* opacity: 0.5; */
+    background-color: rgba(0, 0, 0, 0.76);
+}
+
+.loading_container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.86);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loading_container p {
+    color: #e76364;
+    font-size: 20px;
+}

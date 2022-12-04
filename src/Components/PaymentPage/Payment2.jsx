@@ -3,6 +3,7 @@ import './Payment.css';
 import Navbar from '../LandingPage/TopSection/Navbar/Navbar';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faCheck} from '@fortawesome/free-solid-svg-icons'
+import PaymentDetail from './PaymentDetail';
 function Payment2() {
     return (
         <>
@@ -22,6 +23,8 @@ function Payment2() {
                         <div> &nbsp;&nbsp;&nbsp;Payment</div>
                     </div>
             </div>
+
+            <PaymentDetail />
             
         </>
     );
