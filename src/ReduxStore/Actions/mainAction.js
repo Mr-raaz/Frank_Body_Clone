@@ -50,7 +50,7 @@ const actual = {...data , cartStatus:true};
 
 // fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
 
-    fetch(`https://odd-pleat-cod.cyclic.app/products${id}`,{
+    fetch(`https://odd-pleat-cod.cyclic.app/products/${id}`,{
 
 
         method:'PATCH',
@@ -73,7 +73,7 @@ function quantityZero(data ,dispatch , id){
 
     // fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
 
-        fetch(`https://odd-pleat-cod.cyclic.app/products${id}`,{
+        fetch(`https://odd-pleat-cod.cyclic.app/products/${id}`,{
         method:'PATCH',
         headers:{
             "Content-Type": "application/json"
