@@ -13,9 +13,17 @@ import ProductCategory from '../Components/ProductCategory/ProductCategory'
 import Payment from '../Components/PaymentPage/Payment';
 import Payment2 from '../Components/PaymentPage/Payment2';
 import PaymentDialouge from '../Components/PaymentPage/PaymentDialouge';
+import EmptyCart from '../Components/CartPage/EmptyCart/EmptyCart';
+import Cart from '../Components/CartPage/Cart/Cart';
+
 function AllRoutes() {
 
     const isLogin = useSelector((store) => store.loginStatus);
+    const cartLen = useSelector((store) => store.cart.length);
+
+    console.log(cartLen);
+
+
 
     return (
         <>
@@ -34,6 +42,7 @@ function AllRoutes() {
                         <Route path='/checkout' element={<Payment />} />
                         <Route path='/payment' element={<Payment2 />} />
                         <Route path = '/paymentDone' element={<PaymentDialouge />} />
+                        <Route path='/cart' element={isLogin ? (cartLen==0 ? <EmptyCart /> : <Cart />) : <Navigate to='/Login' />} />
                     </Routes>  
         </>
     );

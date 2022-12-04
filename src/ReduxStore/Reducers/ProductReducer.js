@@ -45,7 +45,35 @@ export default function ProductReducer(data = initialData , action){
                 ...data,
                 loginStatus:action.payload
             }
-    
+            case "Delete_From_Cart" : {
+                return {
+                    ...data,
+                    cart : action.payload
+                }
+            }
+            case "Add_quantity_key": {
+                return {
+                    ...data,
+                    cart : action.payload
+                }
+            }
+            case  "increase_quantity" : {
+                return {
+                    ...data,
+                    cart : action.payload
+                }
+            }
+            case  "decrease_quantity" : {
+                return {
+                    ...data,
+                    cart : action.payload
+                }
+            }
+            case "makezero":
+                return{
+                    ...data,
+                    cart :[]
+                }
         default :{
             return data;
         }

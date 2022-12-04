@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom';
 function PaymentDetail() {
 
     const [curr, setcurr] = useState('3');
-
+    const lcoalprice = localStorage.getItem("total_Price");
     const [payment , setpayment] = useState(false);
     const [loading , setLoading] = useState(false);
 
@@ -122,7 +122,7 @@ medicines and health products on........</p>
 
                         <div className="paymentSection_two">
                             <div>
-                                <p><span>Item Total(MRP)</span> <span>&#x20B9; 2056</span></p>
+                                <p><span>Item Total(MRP)</span> <span>&#x20B9; {lcoalprice}</span></p>
                                 <p><span>Price Discount</span> <span> - &#x20B9; 99</span></p>
 
                                 <p><span>Care Plan</span> <span>&#x20B9; 165</span></p>
@@ -134,7 +134,7 @@ medicines and health products on........</p>
 
                             <div className='line'></div>
 
-                            <p><span className='paid_p'>To be Paid</span> <span className='paid_p'>&#x20B9; 2098</span></p>
+                            <p><span className='paid_p'>To be Paid</span> <span className='paid_p'>&#x20B9; {Number(lcoalprice) + 115}</span></p>
 
 
 

@@ -1,0 +1,58 @@
+.box > button{
+    width: 18%;
+    margin: auto;
+    height: 45px;
+    border: none;
+    padding: 8px 16px;
+    background-color: #3f2a2d;
+    color: #fff;
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-family: 'Courier New';
+    cursor: pointer;
+
+}
+.box > h1{
+  font-family: 'Courier New';
+  font-size: 32px;
+  letter-spacing: 5;
+  color: #444;
+  line-height: 1.24;
+  font-weight: 600;
+  margin-top: 32px;
+  margin-bottom: 16px;
+}
+.box{
+  text-align: center;
+}
+.div > p{
+  font-size: 21px;
+  line-height: 1.6;
+  font-weight: 600;
+  color: #555;
+  letter-spacing: 4px;
+  font-family: Courier,Helvetica, sans-serif;
+  text-transform: none;
+  margin-bottom: 5px;
+}
+.div{
+  border-bottom: 1px solid #666;
+  width: 97%;
+  margin: auto;
+  padding-top: 40px;
+}
+.bottom-box{
+  width: 93%;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  gap: 30px;
+  margin: auto;
+  margin-top: 60px;
+  margin-bottom: 100px;
+}
+
+.cart_outer{
+  margin-top: 60px;
+}
+
