@@ -1,102 +1,114 @@
-import React, { useState } from 'react';
+import * as React from 'react';
+import PropTypes from 'prop-types';
+import Tabs from '@mui/material/Tabs';
+import Tab from '@mui/material/Tab';
+import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
 
-function DetailsTabSection() {
+function TabPanel(props) {
+  const { children, value, index, ...other } = props;
 
-    const [curr , seCurr] = useState("Des");
-
-    
-
-
-    return (
-        <div className='seperate'>
-           <div className="tabSection">
-                <div className='btndoiv'>
-                        <button className={curr == "Des" ? "btnselected" : null}   onClick={()=> seCurr("Des")}>Description</button>
-                        <button className={curr == "Ing" ? "btnselected" : null}  onClick={()=> seCurr("Ing")}>Ingredients</button>
-                        <button className={curr == "Oth" ? "btnselected" : null}  onClick={()=> seCurr("Oth")}>Other Information</button>
-                </div>
-
-
-              { curr == "Des" ? <div className='content'>
-
-                M.A.C Studio Fix Fluid SPF 15 was put to the ultimate test of seeing how long it wears and, not surprisingly, the formula lasts for a full 24 hours! Applies, builds and blends easily and evenly while controlling shine. This modern foundation combines a matte finish and medium-to-full buildable coverage with broad spectrum SPF 15 protection. <br /> <br />
-
-<b>Benefits : </b> <br />
-
-- Oil control up to 6 hours <br />
-- Immediate and 8 hour moisture (All Day) <br />
-- Sweat and humidity resistant <br />
-
-- 24 hours of wear   <br />
-- Color true 24 hours  <br />
-- Non-fading 24 hours  <br />
-- Non-creasing / non-settling 24 hours  <br />
-- Non-streaking 24 hours  <br />
-- Non-caking 24 hours  <br />
-- Non-poring  <br />
-- Immediately smooths skin's appearance  <br />
-- Broad Spectrum UVA/UVB, SPF15, PA ++ <br />
-- Smooths skin's appearance <br />
-- Protects skin from dehydration <br />
-- Comfortable all day <br />
-- Appropriate for all skin types <br />
-- Non-acnegenic <br />
-- Dermatologist tested <br />
-- Oil free
-
-
-
-
-                </div>  : null}
-
-
-
-
-
-
-
-                { curr == "Oth" ? <div className='content'>
-
-                <b>Country of Origin:</b> <br /> Belgium / Canada / Czech Republic / Dominican Republic / France / Germany / Italy / Japan / South Korea / Mexico / North Macedonia / Poland / Switzerland <br /> <br />
-
-
-<b>Generic Name:</b> Makeup <br />
-
-
-<b>Name of Mfg / Brand:</b> Estee Lauder Companies <br />
-
-<b>Address of Mfg / Brand:</b> the Estee Lauder Companies INC,767,fifth Avenue,New York,10153,United States of America <br /> <br />
-
-
-
-Explore the entire range of Foundation available on Nykaa. Shop more M.A.C products here.You can browse through the complete world of M.A.C Foundation . <br />
-Alternatively, you can also find many more products from the M.A.C Studio Fix Fluid SPF 15 range.
-
- <br /> <br />
-
-Expiry Date: 15 July 2023
-Country of Origin:  Belgium
-<br /><br />
-Manufacturer:  Estee lauder Companies
-Address:  the Estee Lauder Companies INC,767,fifth Avenue,NY,10153,United States of America
-
-
-
-                </div>  : null}
-
-
-                {curr == "Ing" ? <div className='content'>
-                Water\\Aqua\\Eau, Cyclopentasiloxane, Peg-10 Dimethicone, Butylene Glycol, Trimethylsiloxysilicate, Ethylhexyl Methoxycinnamate, Dimethicone, Magnesium Sulfate, Titanium Dioxide, Laminaria Saccharina Extract, Algae Extract, Tocopheryl Acetate, Sodium Hyaluronate, Tocopherol, Lecithin, Hydrogenated Lecithin, Xanthan Gum, Sorbitan Sesquioleate, Methoxy Amodimethicone/Silsesquioxane Copolymer, Laureth-7, Dipropylene Glycol, Dimethicone/Peg-10/15 Crosspolymer, Dimethicone/Peg-10 Crosspolymer, Peg/Ppg-18/18 Dimethicone, Disteardimonium Hectorite, Silica, Dimethicone Crosspolymer, Triethoxycaprylylsilane, Propylene Carbonate, Pentaerythrityl Tetra-Di-T-Butyl Hydroxyhydrocinnamate, Sorbic Acid, Chloroxylenol, Phenoxyethanol, [+/- Titanium Dioxide (Ci 77891), Iron Oxides (Ci 77491), Iron Oxides (Ci 77492), Iron Oxides (Ci 77499), Chromium Oxide Greens (Ci 77288)]
-
-
-<br /><br />
-
-
-Please be aware that ingredient lists may change or vary from time to time. Please refer to the ingredient list on the product package you receive for the most up to date list of ingredients.
-                </div> : null}
-           </div>
-        </div>
-    );
+  return (
+    <div
+      role="tabpanel"
+      hidden={value !== index}
+      id={`simple-tabpanel-${index}`}
+      aria-labelledby={`simple-tab-${index}`}
+      {...other}
+    >
+      {value === index && (
+        <Box sx={{ p: 3 }}>
+          <Typography>{children}</Typography>
+        </Box>
+      )}
+    </div>
+  );
 }
 
-export default DetailsTabSection;
+TabPanel.propTypes = {
+  children: PropTypes.node,
+  index: PropTypes.number.isRequired,
+  value: PropTypes.number.isRequired,
+};
+
+function a11yProps(index) {
+  return {
+    id: `simple-tab-${index}`,
+    'aria-controls': `simple-tabpanel-${index}`,
+  };
+}
+
+export default function DetailsTabSection() {
+  const [value, setValue] = React.useState(0);
+
+  const handleChange = (event, newValue) => {
+    setValue(newValue);
+  };
+
+  return (
+    <>
+      <div className="detaisTabSection">
+      <Box sx={{ width: '100%' }}>
+      <Box sx={{ borderBottom: 1, borderColor: 'divide' }}>
+        <Tabs value={value} onChange={handleChange} aria-label="basic tabs example" textColor="secondary"
+        indicatorColor="secondary">
+          <Tab label="Description" {...a11yProps(0)} />
+          <Tab label="Benefits" {...a11yProps(1)} />
+          <Tab label="Direction Of Use" {...a11yProps(2)} />
+          <Tab label="Other Information" {...a11yProps(2)} />
+        </Tabs>
+      </Box>
+      <TabPanel value={value} index={0}>
+      It's time to play naughty and nice with Cheeky Blush Duo. This blush duo brings a natural-looking flush of color that pops on every skin tone. This palette provides a dominant color and a subtle color for blending and softening edges. Infused with radiance-boosting minerals, These pigments sweep on weightless, And a soft veil of color. The ultra-light, Micronized pigments of these shades blend effortlessly into the skin and give you a buildable coverage to enhance the apples of your cheeks!
+<br /> <br />
+Silky, Luminous finish
+Long-wearing formula
+Enriched with radiance-boosting minerals
+Made in Europe
+Available In Three Shades - Brazilian Bombshell 01, Cali Chik 02, Malibu Barbie 03
+
+it is unparalleled.The key ingredients Chicory  protects the liver against alcohol toxicity. It is also a potent antioxidant, which can be seen by its free radical scavenging property and has hepatoprotective property.The Caper Bush is a potent hepatoprotective.It inhibits the elevation of malondialdehyde levels in plasma and hepatic cells. Caper Bush also inhibits the ALT and AST enzyme levels and improves the functional efficiency of the liver.Flavonoids present in the Caper Bush exhibit significant antioxidant properties, as well.
+
+<br /> <br />
+This palette provides a dominant color and a subtle color for blending and softening edges. Infused with radiance-boosting minerals, These pigments sweep on weightless, And a soft veil of color. The ultra-light, Micronized pigments of these shades blend effortlessly into the skin and give you a buildable coverage to enhance the apples of your cheeks!
+      </TabPanel>
+      <TabPanel value={value} index={1}>
+      Every girl has that one makeup product without which she can’t leave her house. If you’re anything like Katrina, you would agree that adding a hint of colour to the apples of your cheeks can keep you looking fresh-faced all day. The Kay Beauty Blush is here to give your face an extreme matte finish, and each shade is curated to flatter your natural skin tone. Its weightless formula feels feathery light on your skin, which makes blending a dream come true. Don’t worry about the blush settling into your pores or fine lines, it works like magic to blur out all your flaws. Swirl the blush all over your cheeks and your makeup will stay put for the day. Our care ingredients containing avocado and mango butter reduces the appearance of age spots while brightening your skin. Being a super hydrating formula it's non-drying and melts into your skin. You can take your pick from eight shades that range from neutral pinks and plums to deeper hues like coral and berry that are made to suit all types of Indian skin tones and undertones, while delivering a seamless finish. Long-lasting and non-transferable, it just ticks all the boxes! <br /><br />
+      </TabPanel>
+      <TabPanel value={value} index={2}>
+      <br />
+     <b>Step 1: </b> Apply a light color all over the lid. <br /> <br />
+
+
+<b>Step 2:</b> Take a mid-tone color and put it in the crease.<br /> <br />
+
+
+<b>Step 3:</b> Blend the colors together and add a shimmer shade to the center lid portion of your eye.<br /> <br />
+
+
+<b>Step 4:</b> Using a light shimmer, highlight the brow bone and inner corner of the eye.<br /> <br />
+      </TabPanel>
+
+      <TabPanel value={value} index={3}>
+
+      Explore the entire range of Blush available on Frank Body. Shop more Kay Beauty products here.You can browse through the complete world of Kay Beauty Blush . <br />
+Alternatively, you can also find many more products from the Kay Beauty Matte Blush range. <br /><br />
+
+
+<b>Expiry Date:</b> 15 October 2023 <br />
+
+<b>Country of Origin:</b>  India <br /> <br />
+
+<b>Manufacturer:</b>  Frank Body - KK Beauty Pvt Ltd <br />
+<b>Address:</b>  104 Vasan Udyog Bhavan Sun Mill Compound Senapati Bapat Marg, Lower Parel, Mumbai City Maharashtra - 400013
+
+<br /> <br /> <br />
+
+
+
+      </TabPanel>
+    </Box>
+      </div>
+    </>
+  );
+}

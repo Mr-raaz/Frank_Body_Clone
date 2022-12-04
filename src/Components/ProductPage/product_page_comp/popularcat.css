@@ -1,0 +1,43 @@
+.popular_cat{
+    margin-top: 40px;
+}
+.headings{
+    text-align: center; 
+}
+.grid_system{
+    margin-top: 30px;
+    /* border:1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap:20px;
+    padding: 20px 40px;
+}
+
+.grid_system > div{
+    height: 250px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: 0.5s;
+}
+
+.grid_system img{
+    width: 100%;
+    height: 85%;
+    transition: 0.6s;
+}
+
+.grid_system > div:hover{
+    scale:1.05;
+    cursor: pointer;
+}
+
+.grid_system h3{
+    color: rgb(59, 59, 59);
+    padding-top: 3px;
+}
+
+.grid_system > div:hover img{
+    scale: 1.05;
+}

@@ -7,6 +7,7 @@ import ShoppingOfferSection  from './product_page_comp/InitialOfferSection/Shopp
 import {Footer} from '../Footer/footer';
 import Maximise from '../LandingPage/MiddleSection/Maximise';
 import OfferBanner from './product_page_comp/OfferBanner';
+import PopularCategorySection from './product_page_comp/PopularCategorySection';
 function ProductPage() {
     return (
         <>
@@ -26,7 +27,12 @@ function ProductPage() {
             <Product_List />
 
             <OfferBanner />
+
+
+<PopularCategorySection />
                 <ShoppingOfferSection />
+
+
                 <Footer />
             
     </m.div>

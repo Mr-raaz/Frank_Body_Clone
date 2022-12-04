@@ -289,3 +289,13 @@
     width: 100%;
     padding: 0px 20px;
 }
+
+.detaisTabSection{
+    border: 1px solid grey;
+    width: 95%;
+    display: flex;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 5px;
+    /* padding: 0px 0px 5px 5px ; */
+}
