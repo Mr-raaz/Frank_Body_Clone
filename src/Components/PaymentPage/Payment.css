@@ -1,0 +1,100 @@
+.payment_outer{
+    /* border: 1px solid red; */
+    margin-top: 60px;
+    background-color: antiquewhite;
+    padding: 10px 10px 0px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.payment_outer > div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 120px;
+    color: #e76364;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding: 3px;
+    padding-bottom: 10px;
+    /* border: 1px solid red; */
+}
+
+.check{
+    background-color: #e76364;
+    padding: 3px 10px;
+    border-radius: 50%;
+    font-weight: bold;
+    color: white;
+}
+
+.other_mark{
+    margin-left: 50px;
+}
+.hei{
+    width: 130px;
+}
+
+.curr{
+    border-bottom: 3px solid #e76364;
+}
+
+.tick{
+    font-weight: bold;
+}
+
+.address_form{
+    /* border: 1px solid red; */
+    padding-left: 10%;
+    padding-top: 2%;
+}
+.addressForm{
+    width: 47%;
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.nameInput{
+    /* border: 1px solid red; */
+}
+.nameInput input{
+    border: none;
+}
+
+.divTest{
+    /* border: 1px solid red; */
+    /* width: 82.5%; */
+}
+
+.addressinput{
+    padding: 5px 0px 60px 5px;
+    width: 500px;
+    /* outline: 2px solid blue; */
+    margin-left: 8px;
+    border-radius: 2px;
+    outline: none;
+    margin-top: 5px;
+    border: none;
+    border: 0.1px solid grey;
+}
+
+.payment_btn_div{
+    /* border: 1px solid red; */
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    padding-right: 10px;
+}
+.payment_btn_div button{
+    padding: 8px 20px;
+    border: none;
+    background-color: #e76364;
+    color: white;
+    border-radius: 5px;
+}
+.payment_btn_div button:hover{
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    cursor: pointer;
+}

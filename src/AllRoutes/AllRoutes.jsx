@@ -10,6 +10,8 @@ import Profile from '../Components/Profile/Profile';
 import Register from '../Components/Login_Signup/Register';
 import { useSelector } from 'react-redux';
 import ProductCategory from '../Components/ProductCategory/ProductCategory'
+import Payment from '../Components/PaymentPage/Payment';
+import Payment2 from '../Components/PaymentPage/Payment2';
 function AllRoutes() {
 
     const isLogin = useSelector((store) => store.loginStatus);
@@ -28,6 +30,8 @@ function AllRoutes() {
                         <Route path='/profile' element={isLogin ? <Profile /> : <Navigate to='/Login' />} />
                         <Route path = '/register' element={<Register />} />
                         <Route path='/category/:type' element={<ProductCategory />} />
+                        <Route path='/checkout' element={<Payment />} />
+                        <Route path='/payment' element={<Payment2 />} />
                     </Routes>  
         </>
     );
