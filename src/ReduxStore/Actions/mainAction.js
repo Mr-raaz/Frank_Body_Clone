@@ -2,7 +2,7 @@ export default function AddProducts(dispatch , updatefilte){
 
     async function getData(){
         // const res = await fetch('https://frankbodyapi.herokuapp.com/products');
-        const res = await fetch('https://frankbody.onrender.com/products');
+        const res = await fetch('https://odd-pleat-cod.cyclic.app/products');
         const data = await res.json();
 
         let temp = data.map((elem)=>{
@@ -50,7 +50,7 @@ const actual = {...data , cartStatus:true};
 
 // fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
 
-    fetch(`https://frankbody.onrender.com/products/${id}`,{
+    fetch(`https://odd-pleat-cod.cyclic.app/products${id}`,{
 
 
         method:'PATCH',
@@ -73,7 +73,7 @@ function quantityZero(data ,dispatch , id){
 
     // fetch(`https://frankbodyapi.herokuapp.com/products/${id}`,{
 
-        fetch(`https://frankbody.onrender.com/products/${id}`,{
+        fetch(`https://odd-pleat-cod.cyclic.app/products${id}`,{
         method:'PATCH',
         headers:{
             "Content-Type": "application/json"
