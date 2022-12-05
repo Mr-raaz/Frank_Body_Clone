@@ -122,7 +122,7 @@ function Details_page({data}) {
             </div>
             
 
-            <p className="price_sec"> <span className="mrp">Best Price: </span>   <span className="normal_price"> &nbsp; &#x20B9;{best_price}</span> <span className="discount"> 15% Off</span></p>
+            <p className="price_sec"> <span className="mrp">Best Price: </span>   <span className="normal_price"> &nbsp; &#x20B9;{best_price}</span> <span className="discount2"> 15% Off</span></p>
             <p className="tax">(Inclusive all taxes)</p>
 
             <div className="otherDetails">

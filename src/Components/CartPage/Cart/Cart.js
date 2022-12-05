@@ -5,6 +5,11 @@ import { AddQuantityKey, DecreaseQuantity, DeleteFromCart, IncreaseQuantity  , m
 
 import "./Cart.css"
 import Navbar from "../../LandingPage/TopSection/Navbar/Navbar";
+
+import { ToastContainer, toast } from 'react-toastify';
+import {toast as tt} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 export const Cart = ()=>{
     
     const cartData = useSelector((storeData)=>storeData.cart);
@@ -44,6 +49,18 @@ export const Cart = ()=>{
     }
 
     const discount = ()=>{
+
+        toast.success('Coupon Applied', {
+            position: "top-center",
+            autoClose: 5000,
+            hideProgressBar: false,
+            closeOnClick: true,
+            pauseOnHover: false,
+            draggable: true,
+            progress: undefined,
+            theme: "light",
+            });
+
         if(discountRef.current.value === "masai500" && totalPrice > 2000 && coupon === false) {
             setTotalPrice((prev)=>prev-500);
         }
@@ -51,6 +68,8 @@ export const Cart = ()=>{
             setTotalPrice((prev)=>prev-200);
         }
         setCoupon(true);
+
+       
     }
 
     return (
@@ -78,7 +97,7 @@ export const Cart = ()=>{
             </div>
 
 
-
+<ToastContainer style={{zIndex:50000000000}}/>
             <div>
                 {
                     cartData.map((el,index)=>{
@@ -96,7 +115,7 @@ export const Cart = ()=>{
                                 <p className="quant">{el.quantity}</p>
                                 <button className="inc" disabled = {el.quantity === 10 ? true : false} onClick={()=>increaseCount(index)}>+</button>
                             </div>
-                            <p>{Math.round(el.best_price*el.quantity * 100) / 100}₹</p>
+                            <p>₹{Math.round(el.best_price*el.quantity * 100) / 100}</p>
                             <img src="https://th.bing.com/th/id/R.f6883ee1ce2e0e3755a1892da2fe7e3c?rik=ozgkFfeviLMaDg&riu=http%3a%2f%2fcdn.onlinewebfonts.com%2fsvg%2fimg_265949.png&ehk=gPghjaahwRbD4GGEcjuhCM8HJhQYy%2b2YzE5lGs5PvMo%3d&risl=&pid=ImgRaw&r=0" width="20px" height="20px" style={{marginTop:"15px"}} alt="" onClick={()=>handleCart(index)}/>
                         </div>
                     })
