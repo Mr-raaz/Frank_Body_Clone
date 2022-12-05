@@ -38,8 +38,8 @@ That simple, that good.</p>
  <br>
  
  # 🔹 Landing Page 
- <p></p>
- <img src=""/>
+ <p>Landing Page has Login Signup / Search bar /  Cart and Trending Feature Which helps users to pick what They want Easily...</p>
+ <img src="./src/PageImages/LandingPage.png"/>
  
  # 🔹 Login / SignUp 
  <p></p>
