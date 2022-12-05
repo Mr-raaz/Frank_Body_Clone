@@ -114,7 +114,7 @@ function PaymentDetail() {
                             <img src="https://res.cloudinary.com/du8msdgbj/image/upload/v1609235175/rwfhtgwtk8zmnbwdvfme.png" alt="Not found" />
                             <div>
                             <p>Get 20% instant discount (up to ₹400) on
-medicines and health products on........</p>
+Beauty and Makeup products on........</p>
                             </div>
 
                         </div>
@@ -169,7 +169,7 @@ medicines and health products on........</p>
           Payment Complete
         </div>
         <div class="success-description">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text.
+          Thank You so Much For Being Our Valued Customer ! Hope You Enjoy Your New Purchase. You can Track Your Order Status in Profile Section.
         </div>
         <div class="order-details">
           <div class="order-number-label">Order Number</div>
