@@ -45,7 +45,7 @@ function BrandSection() {
 
 
                     
-                    <div>
+                    <div className='tab_res'>
 
                     
                     <div>

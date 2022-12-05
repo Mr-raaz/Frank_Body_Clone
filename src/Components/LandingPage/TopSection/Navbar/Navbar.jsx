@@ -28,14 +28,14 @@ function Navbar() {
                             <ul>
                                 <li><NavLink to='/'>Home</NavLink></li>
                                 <li><NavLink to='/shop'>Shop</NavLink></li>
-                                <li><NavLink to='/about'>About</NavLink></li>
-                                <li><NavLink to='/contact'>Contact</NavLink></li>
+                                <li className="res_m"><NavLink to='/about'>About</NavLink></li>
+                                <li className="res_m"><NavLink to='/contact'>Contact</NavLink></li>
                             </ul>
                     </div>
                     <div className='navbar_icons'>
-                    <NavLink ><FontAwesomeIcon icon={faMagnifyingGlass} className="cart_logo"/></NavLink>
+                    <NavLink className="res_m"><FontAwesomeIcon icon={faMagnifyingGlass} className="cart_logo"/></NavLink>
                     <NavLink to='/profile'><FontAwesomeIcon icon={faUser} className="cart_logo"/></NavLink>
-                    <NavLink to='/cart'><div className='cartLogo_div'>
+                    <NavLink to='/cart' className="res_m"><div className='cartLogo_div'>
                     <FontAwesomeIcon icon={faCartShopping} className="cart_logo"/>
                     {
                         cartitem.length == 0 ? null :<p className='cartQuant'>{cartitem.length}</p>

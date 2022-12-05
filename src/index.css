@@ -286,4 +286,27 @@ body::-webkit-scrollbar-thumb {
     #dreamBanner{
         padding-bottom: 8%;
     }
+    .outer > div:last-of-type{
+        display: none;
+    }
+    .outer > div  > div{
+        height: 80px;
+        width: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        margin-left: 10px;
+    }
+    
+    .outer{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 5px;
+    }
+    .maximise_beauty_section{
+        padding: 10px 10px;
+        text-align: center;
+    }
+
+    
 }

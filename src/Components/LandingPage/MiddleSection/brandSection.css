@@ -53,3 +53,35 @@
 .brandCategory_outer > div:hover img{
     transform: scale(1.1);
 }
+
+@media (max-width:886px){ 
+
+    .brandCategory_outer{
+        padding: 0px 10px;
+    }
+
+    .brandCategory_outer > div{
+        margin-top: 0px;
+        width: 230px;
+        height: 220px
+    }
+
+    .tab_res{
+        display: none;
+    }
+
+   }
+
+@media (max-width: 500px){  
+    .brandCategory_outer{
+        padding: 0px 60px;
+        flex-direction: column;
+    }
+
+    .brandCategory_outer > div{
+        margin-top: 20px;
+    }
+  }
+
+
+  

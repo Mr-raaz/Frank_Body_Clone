@@ -14,8 +14,8 @@ function delivery_related() {
                     </div>
                     <div><img src={second} alt="Not found" /></div>
                     <div><img src={third} alt="Not found" /></div>
-                    <div><img src={fourth} alt="Not found" /></div>
-                    <div><img src={fifth} alt="Not found" /></div>
+                    <div className='mobile_res_hide'><img src={fourth} alt="Not found" /></div>
+                    <div className='mobile_res_hide'><img src={fifth} alt="Not found" /></div>
                 </div>
         </>
     );

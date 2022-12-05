@@ -196,3 +196,17 @@ font-family: sans-serif;
   background-color: antiquewhite;
   color: black;
 }
+
+
+@media (max-width: 480px){  
+  .testinglimte{
+    width: 120%;
+    margin-left: -30px;
+    font-size: 15px;
+  }
+  .timerComp{
+    width: 120%;
+    margin-left: -30px;
+    padding-bottom: 20px !important;
+  }
+}

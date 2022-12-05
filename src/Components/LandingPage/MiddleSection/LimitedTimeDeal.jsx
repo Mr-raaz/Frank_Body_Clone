@@ -17,6 +17,21 @@ function LimitedTimeDeal() {
 
     const [data , updateData] = useState([])
 
+    const [width , setWidth] = useState(window.screen.width);
+
+    function actual() {
+        setWidth(window.innerWidth);
+      }
+
+    useEffect(()=>{
+
+        window.addEventListener("resize" , actual);
+        console.log(width)
+        return () => {
+            window.removeEventListener("resize", actual);
+          };
+    })
+
     function updateTrending(val){
         
         updateData(val)
@@ -35,7 +50,7 @@ function LimitedTimeDeal() {
             <span className='testinglimte'><h2>Limited Time Deal</h2> <button>View All <FontAwesomeIcon   icon={faAngleRight} /></button></span>
             <p  className='timerComp'><FontAwesomeIcon   icon={faClock} /> <Timer /></p>
             <Swiper
-        slidesPerView={5}
+        slidesPerView={width > 500 ? (width >  780 ? 5 : 3) : 1}
         spaceBetween={30}
         slidesPerGroup={1}
         loop={true}
