@@ -10,7 +10,9 @@ import {motion as m , AnimatePresence} from 'framer-motion';
 function Product_List() {
 
     const currActiveCat = useSelector((data) => data.activeCat);
+
     const sortingOrd = useSelector((data) => data.sortingOrder);
+    
     console.log(currActiveCat);
 
     

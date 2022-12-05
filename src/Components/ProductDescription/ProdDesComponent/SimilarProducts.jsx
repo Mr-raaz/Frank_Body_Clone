@@ -140,7 +140,7 @@ function SimilarProducts() {
         <>
             <div className="recommendation_border">
 
-                <h2 className='recomended'>Recommended Products</h2> <br />
+                <h2 className='recomended'>You May Also Like </h2> <br />
                 <div className="slider_section_recom">
 
                 <Swiper

@@ -16,17 +16,97 @@ import FormControl from '@mui/material/FormControl';
 import FormLabel from '@mui/material/FormLabel';
 import FormGroup from '@mui/material/FormGroup';
 import Checkbox from '@mui/material/Checkbox';
-
+import { useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import { useSelector } from 'react-redux';
+import { useState } from 'react';
+import { useEffect } from 'react';
 
 function ProductCategory() {
 
+    let {type} = useParams();
 
-    
+    const [type2 , setType] = useState(type);
+
+    if(type2 == 'Lipcare'){
+      setType("Lip care")
+    }
+
+
+    function handleCat(val){
+      setType(val)
+    }
+    const [data2 , setData2] = useState([])
+
+    const [sort , setSort] = useState("")
+
+      const data = useSelector((store) => store.products);
+
+
+      useEffect(()=>{
+        setData2(data);
+      },[])
+      
+      const navigate = useNavigate();
+
+      function handleDesRedirect(val){
+        navigate(`/details/${val}`)
+      }
+
+      function handleSortlth(val){
+       if(val == 'lth'){
+        let temp = data2.sort(function (a, b) {
+          if (a.best_price > b.best_price) {
+            return 1;
+          }
+          if (a.best_price < b.best_price) {
+            return -1;
+          }
+          return 0;
+        });
+        setData2([...temp]);
+       } else if (val == 'htl'){
+        let temp = data2.sort(function (a, b) {
+          if (a.best_price > b.best_price) {
+            return -1;
+          }
+          if (a.best_price < b.best_price) {
+            return 1;
+          }
+          return 0;
+        });
+        setData2([...temp]);
+       } else if (val == 'asc'){
+        let temp =data2.sort(function (a, b) {
+          if (a.prod_name > b.prod_name) {
+            return 1;
+          }
+
+          if (a.prod_name < b.prod_name) {
+            return -1;
+          }
+
+          return 0;
+        });
+        setData2([...temp]);
+       }
+      }
+
+    function sortbyPrice(a, b){
+      let temp = data.filter((elem)=>{
+        return elem.best_price >= a && elem.best_price <=b
+          
+        
+      })
+
+      setData2([...temp])
+      console.log(temp);
+    }
     return (
         <>
             <Navbar />
 
-            <p className='location'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Shop <FontAwesomeIcon icon = {faAngleRight} /></b>&nbsp; Category</p>
+            <p className='location'> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>Shop <FontAwesomeIcon icon = {faAngleRight} /></b>&nbsp; {type2}</p>
 
             <div className="product_category_contaier">
                     <div className='ldiv'>
@@ -46,13 +126,13 @@ function ProductCategory() {
         <AccordionDetails>
           <Typography>
           <FormGroup>
-      <FormControlLabel name='tic' control={<Checkbox  />} label="Skin Care" />
-      <FormControlLabel name='tic2' control={<Checkbox />} label="Lip Care" />
-      <FormControlLabel name='tic2' control={<Checkbox />} label="Hair" />
-      <FormControlLabel name='tic2' control={<Checkbox />} label="Perfumes" />
-      <FormControlLabel name='tic2' control={<Checkbox defaultChecked />} label="Makeup" />
-      <FormControlLabel name='tic2' control={<Checkbox />} label="Everyday" />
-      <FormControlLabel name='tic2' control={<Checkbox />} label="Mens" />
+      <FormControlLabel name='tic' control={<Checkbox  checked = {type2 == "Skin Care" ? true : false} />} label="Skin Care"  onClick={()=> handleCat("Skin Care")}/>
+      <FormControlLabel name='tic2' control={<Checkbox checked = {type2 == "Lip care" ? true : false} />} label="Lip Care"  onClick={()=> handleCat("Lip care")}/>
+      <FormControlLabel name='tic2' control={<Checkbox checked = {type2 == "hAIR" ? true : false} />} label="Hair" onClick={()=> handleCat("HAIR")} />
+      <FormControlLabel name='tic2' control={<Checkbox checked = {type2 == "Perfumes" ? true : false}/>} label="Perfumes" onClick={()=> handleCat("Perfumes")} />
+      <FormControlLabel name='tic2' control={<Checkbox  checked = {type2 == "makeup" ? true : false}/>} label="Makeup"  onClick={()=> handleCat("makeup")}/>
+      <FormControlLabel name='tic2' control={<Checkbox checked = {type2 == "EVERYDAY" ? true : false}/>} label="Everyday" onClick={()=> handleCat("EVERYDAY")}/>
+      <FormControlLabel name='tic2' control={<Checkbox disabled />} label="Mens" />
     </FormGroup>
           </Typography>
         </AccordionDetails>
@@ -76,10 +156,10 @@ function ProductCategory() {
       >
         <FormControlLabel value="female" control={<Radio />} label="Popularity" />
         <FormControlLabel value="male" control={<Radio />} label="Discount" />
-        <FormControlLabel value="name" control={<Radio />} label="Name" />
+        <FormControlLabel value="name" control={<Radio />} label="Name"  onClick={()=>handleSortlth("asc")}/>
         <FormControlLabel value="newArrivals" control={<Radio />} label="New Arrivals" />
-        <FormControlLabel value="lth" control={<Radio />} label="Price Low To High" />
-        <FormControlLabel value="htl" control={<Radio />} label="Price High To Low" />
+        <FormControlLabel value="lth" control={<Radio />} label="Price Low To High" onClick={()=>handleSortlth("lth")} />
+        <FormControlLabel value="htl" control={<Radio />} label="Price High To Low" onClick={()=>handleSortlth("htl")}/>
         <FormControlLabel value="rating" control={<Radio />} label="Ratings" />
       </RadioGroup>
     </FormControl>
@@ -118,7 +198,7 @@ function ProductCategory() {
 
       </Accordion>
 
-      <Accordion >
+      <Accordion expanded >
         <AccordionSummary
           expandIcon={<ExpandMoreIcon />}
           aria-controls="panel2a-content"
@@ -129,10 +209,10 @@ function ProductCategory() {
         <AccordionDetails>
           <Typography>
           <FormGroup>
-      <FormControlLabel name='tic' control={<Checkbox  />} label="Rs. 0 - Rs . 499" />
-      <FormControlLabel name='tic2' control={<Checkbox />} label="Rs. 500 - Rs . 999" />
-      <FormControlLabel name='tic2' control={<Checkbox />} label="Rs. 1000 - Rs . 1999" />
-      <FormControlLabel name='tic2' control={<Checkbox />} label="Rs. 2000 - Above" />
+      <FormControlLabel name='tic' control={<Checkbox  />} label="Rs. 0 - Rs . 499"  onClick={()=> sortbyPrice(0 , 499)} />
+      <FormControlLabel name='tic2' control={<Checkbox />} label="Rs. 500 - Rs . 999"   onClick={()=> sortbyPrice(500 , 999)}/>
+      <FormControlLabel name='tic2' control={<Checkbox />} label="Rs. 1000 - Rs . 1999"  onClick={()=> sortbyPrice(1000 , 1999)} />
+      <FormControlLabel name='tic2' control={<Checkbox />} label="Rs. 2000 - Above"   onClick={()=> sortbyPrice(2000 , 9999999)}/>
     </FormGroup>
           </Typography>
         </AccordionDetails>
@@ -186,12 +266,19 @@ function ProductCategory() {
                     <div className='rdiv'>
 
 
-                    <div>
-                        <img src="https://www.frankbody.com/int/wp-content/uploads/2022/11/frank-body-best-selling-besties-kit_DOT.COM_UK_VESSEL-1.jpg" alt="Not Found" />
+                    {
+                      data2.map((elem) => {
+                        return (
+                          <>
+                            {
+                              elem.categories == type2 ?  <>
+                          <div className='productCate_card'>
 
-                        <h6 className='prod_name'>Carlton London Perfume Limited Edition Blush Perfume</h6>
-                        <div className="price_outer">
-                        <div> <span>⭐⭐⭐⭐⭐</span> <b className='ttd'>&#x20B9; 299</b></div>
+                        <img src={elem.url_1} alt="Not Found" onClick={()=> handleDesRedirect(elem.id)}/>
+
+                        <h6 className='prod_name' onClick={()=> handleDesRedirect(elem.id)}>{elem.prod_name}</h6>
+                        <div className="price_outer" onClick={()=> handleDesRedirect(elem.id)}>
+                        <div> <span>⭐⭐⭐⭐⭐</span> <b className='ttd'>&#x20B9; {elem.best_price}</b></div>
                         </div>
 
                         <div className='btn_outer'>
@@ -200,6 +287,12 @@ function ProductCategory() {
                         </div>
 
                     </div>
+                          </> : null
+                            }
+                          </>
+                        )
+                      })
+                    }
 
 
 

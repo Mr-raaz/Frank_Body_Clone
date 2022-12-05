@@ -97,3 +97,12 @@
     background: none;
     cursor: pointer;
 }
+
+.productCate_card{
+    transition: 0.5s;
+}
+
+.productCate_card:hover{
+    scale: 1.05;
+    cursor: pointer;
+}

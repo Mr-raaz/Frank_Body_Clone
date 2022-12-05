@@ -107,14 +107,16 @@
 
 .price_sec{
     /* border: 1px solid red; */
-    padding: 5px 0px;
+    padding: 0px 0px;
     margin-top: 10px;
+    display: flex;
 }
 .price_sec{
     font-weight: bold;
     color: rgb(253, 73, 73);
-    display: flex;
-    align-items: center;
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
 }
 .striked_price{
     font-size: 12px;
@@ -136,11 +138,14 @@
     color: black;
 }
 .discount{
-    border-left: 1px solid green;
+    border-left: 2px solid green;
     padding: 0px;
     padding-left: 5px;
-    margin-left: 10px;
+    margin-left: 10px !important;
     color: green;
+    width: 20% !important;
+    border-bottom: none !important;
+    float: right !important;
 }
 .product_name_price{
     border-bottom: 1px solid grey;
@@ -257,7 +262,7 @@
 }
 
 .recomended{
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     background-color: antiquewhite;
     padding: 10px;
 }
