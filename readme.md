@@ -1,70 +1,90 @@
-# Getting Started with Create React App
+# <img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_170,w_170,f_auto,b_white,q_auto:eco,dpr_1/v1438842049/auk7ayohemudyedrknde.png" width="25px"/> Frank Body Clone
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<p>Frank Body is an e-commerce company, It sells beauty, and Makeup products across websites, mobile apps and 100+ offline stores. In 2020, I don’t take myself too seriously but I’m serious about the right thing.
+That's why over 6 million babes have fallen in love with me.</p>
 
-## Available Scripts
+<p>Several years ago in a coffee shop, five friends had a drink and an idea: a humble coffee scrub. Their mission was to remove the hyperbole that saturates the skincare industry and make clean skincare fun. So they called me frank and I've been getting babes dirty ever since.
+That simple, that good.</p>
 
-In the project directory, you can run:
+<br>
 
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+<div align="center">
+  <img  src="https://invitationdigital-res-1.cloudinary.com/image/upload/q_auto,f_auto,fl_strip_profile/Frank_banner" height="390px" width="100%"/>
+  </div>
+  
+ # 🌟 Objective : <br>
+ 
+ <p>Our objective is to replicate the original site with all the functionalities and design elements. We aim to create the best clone of the website using the skills we have learnt through Masai School.</p>
+ 
+ 
+ # Tech Stack
+  <div><img src="https://cdn-icons-png.flaticon.com/512/1048/1048877.png" width="15px"/> REACT</div>
+  <div><img src="https://cdn-icons-png.flaticon.com/512/732/732190.png" width="15px"/> CSS</div>
+  <div><img src="https://upload.wikimedia.org/wikipedia/commons/4/49/Redux.png" width="15px"/> Redux</div>
+  <div><img src="https://cdn-icons-png.flaticon.com/512/718/718064.png" width="15px"/> LOCALSTORAGE</div>
+  <div><img src="https://cdn-icons-png.flaticon.com/512/541/541488.png" width="15px"/> JSON-SERVER</div>
+  
+  <br>
+  
+# <img src="https://cdn-icons-png.flaticon.com/512/1534/1534938.png" width="25px"/> Team Members 
+ 
+ | Name            | Contribution                                                                |
+| ----------------- | ------------------------------------------------------------------ |
+|<a href = "https://github.com/yug0231" > Yugal </a> | Landing Page |
+| <a href = "https://github.com/Adil-khan-007" > Adil Khan </a>| Cart Page|
+|<a href = "https://github.com/vaddadiPhani" > Bharat </a>| Login / Signup |
+| <a href = "https://github.com/Mr-raaz" >Anshu Raj </a> | Shop , Product , Product Description ,Checkout , Payment , Profile , About , Contact|
+ 
+ <br>
+ 
+ # 🔹 Landing Page 
+ <p></p>
+ <img src=""/>
+ 
+ # 🔹 Login / SignUp 
+ <p></p>
+ <img src=""/>
+ 
+ # 🔹 Product Page
+ <p></p>
+ <img src=""/>
+ 
+ # 🔹 Product Description
+ <p></p>
+ <img src=""/>
+ 
+  # 🔹 Cart Page
+ <p></p>
+ <img src=""/>
+ 
+  # 🔹 Payment Page
+ <p></p>
+ <img src=""/>
+ 
+ # 🔹 Shop Page
+ <p></p>
+ <img src=""/>
+ 
+ # 🔹 About Page
+ <p></p>
+ <img src=""/>
+ 
+ # 🔹 Contact Page
+ <p></p>
+ <img src=""/>
+ 
+    
+ # <img src="https://cdn-icons-png.flaticon.com/512/1934/1934019.png" width="25px"/> Challenges :
+ 
+ <p> 1. As every journey has some challenges and so was ours. In our team, all of the members were not familiar with each other so it was difficult for all of us to communicate and collaborate, there were some moments when members were not able to communicate with each other and had a conflict and it was hard for everyone to handle these conflicts. </p>
+ 
+ <p> 2. Another problem was to merge all of the files in a proper sequence which was again a difficult task for us because while merging and connecting all the pages some of the pages had the same name, and while running the site it was redirecting to some other pages so it was difficult to find the location and to rename the file.</p>
+ <p> 3. All of Us were not very confident in React, throughout the devlopment We were facing issue in implementing redux part but we helped each other and got rid of from the problem and successfully completed our Project..</p>
+ 
+ 
+ # 🚀 Demo :
+ 
+ <p><a href ="" ><img src = "https://camo.githubusercontent.com/59cde2396da07f6c391795028e4350eb3a99c0186d55161807728d44200c6959/68747470733a2f2f6170692e6e65746c6966792e636f6d2f6170692f76312f6261646765732f62363534633934652d303861362d346237392d623434332d3738333735383162316438642f6465706c6f792d737461747573"/></a></p>
+ 
+  
+  
