@@ -55,11 +55,11 @@ That simple, that good.</p>
  
   # 🔹 Cart Page
  <p></p>
- <img src=""/>
+ <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gMBBzFOxgh-Ww99Xk-zIFKHIOIbKOBer77-XMwbeBd7GtgOIb2XnVDAHmJ3phOONxe6gwg18nbBz5HUcPI7i_eLPqAhow=w1920-h972"/>
  
   # 🔹 Payment Page
  <p></p>
- <img src=""/>
+ <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gMsj-sNvn5dCTCpxESNGhXlvPRHkKo2RNS2wmmJKu7HlQsFBCrIqwUrfPIZstymlTCBfXuPg4s89Wc2U4JOeYS0AD46-A=w1920-h972"/>
  
  # 🔹 Shop Page
  <p></p>
@@ -84,7 +84,7 @@ That simple, that good.</p>
  
  # 🚀 Demo :
  
- <p><a href ="" ><img src = "https://camo.githubusercontent.com/59cde2396da07f6c391795028e4350eb3a99c0186d55161807728d44200c6959/68747470733a2f2f6170692e6e65746c6966792e636f6d2f6170692f76312f6261646765732f62363534633934652d303861362d346237392d623434332d3738333735383162316438642f6465706c6f792d737461747573"/></a></p>
+ <p><a href ="https://darling-sorbet-a495bc.netlify.app/" ><img src = "https://camo.githubusercontent.com/59cde2396da07f6c391795028e4350eb3a99c0186d55161807728d44200c6959/68747470733a2f2f6170692e6e65746c6966792e636f6d2f6170692f76312f6261646765732f62363534633934652d303861362d346237392d623434332d3738333735383162316438642f6465706c6f792d737461747573"/></a></p>
  
   
   
