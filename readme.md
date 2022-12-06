@@ -63,15 +63,15 @@ That simple, that good.</p>
  
  # 🔹 Shop Page
  <p></p>
- <img src=""/>
+ <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gOe52u_JiW2MGEqWmJDbPd2_aL2HCM3dwhcCteOpY6FbHQ-H5M1841vCQY0TcfLxR5NzYJMWLUOrcZLwyvh9c8s8BU2ZA=w1920-h972"/>
  
  # 🔹 About Page
  <p></p>
- <img src=""/>
+ <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gOPanyfXJQAUnFNHLjvoXz8tf4hCLkf4suMEceS7sr1Wuz1CWGOQAfGT0QbZgRBqvAYl-ynKCB6yoY91sqgIA_Dd5DrtQ=w1920-h972"/>
  
  # 🔹 Contact Page
  <p></p>
- <img src="../src/PageImages/contact.png"/>
+ <img src="https://lh3.googleusercontent.com/u/0/drive-viewer/AFDK6gPmAbtTU5462iSA4yx1C_OG6GxFzSNiL2D5oDiwr811XyqZY4_npxgZ3bHMoNb37sRl-lmjdj63cA_5ydrv9s0dZZ7-Lw=w1920-h972"/>
  
     
  # <img src="https://cdn-icons-png.flaticon.com/512/1934/1934019.png" width="25px"/> Challenges :
