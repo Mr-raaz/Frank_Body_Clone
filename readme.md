@@ -71,7 +71,7 @@ That simple, that good.</p>
  
  # 🔹 Contact Page
  <p></p>
- <img src=""/>
+ <img src="../src/PageImages/contact.png"/>
  
     
  # <img src="https://cdn-icons-png.flaticon.com/512/1934/1934019.png" width="25px"/> Challenges :
